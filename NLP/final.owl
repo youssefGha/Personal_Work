@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:pr="http://example.com/h#"
+>
+  <owl:Class rdf:about="http://example.com/h#risk">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#needs">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#organizations"/>
+  <rdf:Description rdf:about="http://example.com/h#is_inputs">
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Project_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.1.1_Project_Management_Plan_In_planning_risk_management,_all_approved_subsidiary_management_plans_and_baselines_should_be_taken_into__consideration_in_order_to_make_the_risk_management_plan_consistent_with_them._The_risk_management_plan_is_also__a_component_of_the_project_management_plan._The_project_management_plan_provides_baseline_or_current_state_of__risk-affected_areas_including_scope,_schedule,_and_cost._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.1.1_Project_Management_Plan_Described_in_Section_4.2.3.1._The_project_management_plan,_which_includes_the_risk_management_plan,_provides__guidance_for_risk_monitoring_and_controlling._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_project_management_plan_is_the_document_that_describes_how_the_project_will_be_executed,_monitored,_and_controlled._It_integrates_and_consolidates_all_of_the_subsidiary_plans_and_baselines_from_the_planning_processes."/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Project_charter">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_project_charter_is_the_document_issued_by_the_project_initiator_or_sponsor_that_formally_authorizes_the_existence_of_a_project_and_provides_the_project_manager_with_the_authority_to_apply_organizational_resources_to_project_activities._It_documents_the_business_needs,_assumptions,_constraints,_the_understanding_of_the_customer’s_needs_and_high-level_requirements,_and_the_new_product,_service,_or_result_that_it_is_intended_to_satisfy"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.1.2_Project_charter_Described_in_Section_4.1.3.1._The_project_charter_can_provide_various_inputs_such_as_high-level_risks,_high-level__project_descriptions,_and_high-level_requirements._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Stakeholder_register">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_main_output_of_the_Identify_Stakeholders_process_is_the_stakeholder_register._This_contains_all_details_related_to_the_identified_stakeholders_including,_but_not_limited_to:•&#9;_Identification_information._Name,_organizational_position,_location,_role_in_the_project,_contact_information;•&#9;_Assessment_information._Major_requirements,_main_expectations,_potential_influence_in_the_project,_phase_in_the_life_cycle_with_the_most_interest;_and•&#9;_Stakeholder_classification._Internal/external,_supporter/neutral/resistor,_etc.The_stakeholder_register_should_be_consulted_and_updated_on_a_regular_basis,_as_stakeholders_may_change—or_new_ones_identified—throughout_the_life_cycle_of_the_project."/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_main_output_of_the_Identify_Stakeholders_process_is_the_stakeholder_register._This_contains_all_details_related_to_the_identified_stakeholders_including,_but_not_limited_to:•&#9;_Identification_information._Name,_organizational_position,_location,_role_in_the_project,_contact_information;•&#9;_Assessment_information._Major_requirements,_main_expectations,_potential_influence_in_the_project,_phase_in_the_life_cycle_with_the_most_interest;_and•&#9;_Stakeholder_classification._Internal/external,_supporter/neutral/resistor,_etc.The_stakeholder_register_should_be_consulted_and_updated_on_a_regular_basis,_as_stakeholders_may_change—or_new_ones_identified—throughout_the_life_cycle_of_the_project"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.1.3_Stakeholder_register_Described_in_Section_13.1.3.1._The_stakeholder_register,_which_contains_all_details_related_to_the_project’s__stakeholders,_provides_an_overview_of_their_roles._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.9_Stakeholder_register_Described_in_Section_13.1.3.1._Information_about_the_stakeholders_is_useful_for_soliciting_inputs_to_identify_risks,__as_this_will_ensure_that_key_stakeholders,_especially_the_stakeholder,_sponsor,_and_customer_are_interviewed_or__otherwise_participate_during_the_Identify_Risks_process._322_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Enterprise_Environmental_Factors">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Enterprise_environmental_factors_refer_to_conditions,_not_under_the_control_of_the_project_team,_that_influence,_constrain,_or_direct_the_project._Enterprise_environmental_factors_are_considered_inputs_to_most_planning_processes,_may_enhance_or_constrain_project_management_options,_and_may_have_a_positive_or_negative_influence_on_the_outcome"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.1.4_Enterprise_Environmental_Factors_Described_in_Section_2.1.5._The_enterprise_environmental_factors_that_can_influence_the_Plan_Risk_Management__process_include,_but_are_not_limited_to,_risk_attitudes,_thresholds,_and_tolerances_that_describe_the_degree_of_risk__that_an_organization_will_withstand._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.1.4_Enterprise_Environmental_Factors_Described_in_Section_2.1.5._Enterprise_environmental_factors_may_provide_insight_and_context_to_the_risk__assessment,_such_as:_&#9;_Industry_studies_of_similar_projects_by_risk_specialists,_and_&#9;_Risk_databases_that_may_be_available_from_industry_or_proprietary_sources._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.5_Enterprise_Environmental_Factors_Described_in_Section_2.1.5._Enterprise_environmental_factors_may_provide_insight_and_context_to_the_risk_analysis,__such_as:_&#9;_Industry_studies_of_similar_projects_by_risk_specialists,_and_&#9;_Risk_databases_that_may_be_available_from_industry_or_proprietary_sources._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__335_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#organizational_Process_Assets">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Organizational_process_assets_are_the_plans,_processes,_policies,_procedures,_and_knowledge_bases_specific_to_and_used_by_the_performing_organization._They_include_any_artifact,_practice,_or_knowledge_from_any_or_all_of_the_organizations_involved_in_the_project_that_can_be_used_to_perform_or_govern_the_project._These_process_assets_include_formal_and_informal_plans,_processes,_policies,_procedures,_and_knowledge_bases,_specific_to_and_used_by_the_performing_organization._The_process_assets_also_include_the_organization’s_knowledge_bases_such_as_lessons_learned_and_historical_information._Organizational_process_assets_may_include_completed_schedules,_risk_data,_and_earned_value_data._Organizational_process_assets_are_inputs_to_most_planning_processes._Throughout_the_project,_the_project_team_members_may_update_and_add_to_the_organizational_process_assets_as_necessary._Organizational_process_assets_may_be_grouped_into_two_categories:_(1)_processes_and_procedures,_and_(2)_corporate_knowledge_base"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.1.5_organizational_Process_Assets_Described_in_Section_2.1.4._The_organizational_process_assets_that_can_influence_the_Plan_Risk_Management__process_include,_but_are_not_limited_to:_314_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;_Risk_categories,_&#9;_Common_definitions_of_concepts_and_terms,_&#9;_Risk_statement_formats,_&#9;_Standard_templates,_&#9;_Roles_and_responsibilities,_&#9;_Authority_levels_for_decision_making,_and_&#9;_Lessons_learned._11.1.2_Plan_risk_Management:_tools_and_techniques_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.1.5_organizational_Process_Assets_Described_in_Section_2.1.4._The_organizational_process_assets_that_can_influence_the_Perform_Qualitative_Risk__Analysis_process_include_information_on_prior,_similar_completed_projects._11.3.2_Perform_Qualitative_risk_Analysis:_tools_and_techniques_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.6_organizational_Process_Assets_Described_in_Section_2.1.4._The_organizational_process_assets_that_can_influence_the_Perform_Quantitative_Risk__Analysis_process_include_information_from_prior,_similar_completed_projects._11.4.2_Perform_Quantitative_risk_Analysis:_tools_and_techniques_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_Management_Plan_11">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_risk_management_plan_is_a_component_of_the_project_management_plan_and_describes_how_risk_management_activities_will_be_structured_and_performed."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.1_risk_Management_Plan_11_Described_in_Section_11.1.3.1._Key_elements_of_the_risk_management_plan_that_contribute_to_the_Identify_Risks__process_are_the_assignments_of_roles_and_responsibilities,_provision_for_risk_management_activities_in_the_budget__and_schedule,_and_categories_of_risk,_which_are_sometimes_expressed_as_a_risk_breakdown_structure_(Figure_11-4)._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#cost_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_cost_management_plan_is_a_component_of_the_project_management_plan_and_describes_how_the_project_costs_will_be_planned,_structured,_and_controlled._The_cost_management_processes_and_their_associated_tools_and_techniques_are_documented_in_the_cost_management_plan"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.2_cost_Management_Plan_Described_in_Section_7.1.3.1._The_cost_management_plan_provides_processes_and_controls_that_can_be_used_to__help_identify_risks_across_the_project._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.2_cost_Management_Plan_Described_in_Section_7.1.3.1._The_cost_management_plan_provides_guidelines_on_establishing_and_managing_risk__reserves._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Schedule_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:comment rdf:resource="http://example.com/h#A_component_of_the_project_management_plan_that_establishes_the_criteria_and_the_activities_for_developing,_monitoring,_and_controlling_the_schedule._The_schedule_management_plan_may_be_formal_or_informal,_highly_detailed_or_broadly_framed,_based_upon_the_needs_of_the_project,_and_includes_appropriate_control_thresholds."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.3_Schedule_Management_Plan_Described_in_Section_6.1.3.1._The_schedule_management_plan_provides_insight_to_project_time/schedule__objectives_and_expectations_which_may_be_impacted_by_risks_(known_and_unknown)._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.3_Schedule_Management_Plan_Described_in_Section_6.1.3.1._The_schedule_management_plan_provides_guidelines_on_establishing_and_managing__risk_reserves._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Quality_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_quality_management_plan_is_a_component_of_the_project_management_plan_that_describes_how_the_organization’s_quality_policies_will_be_implemented._It_describes_how_the_project_management_team_plans_to_meet_the_quality_requirements_set_for_the_project."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.4_Quality_Management_Plan_Described_in_Section_8.1.3.1._The_quality_management_plan_provides_a_baseline_of_quality_measures_and_metrics__for_use_in_identifying_risks._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__321_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Human_resource_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_human_resource_management_plan,_a_part_of_the_project_management_plan,_provides_guidance_on_how_project_human_resources_should_be_defined,_staffed,_managed,_and_eventually_released._The_human_resource_management_plan_and_any_subsequent_revisions_are_also_inputs_into_the_Develop_Project_Management_Plan_process"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.5_Human_resource_Management_Plan_Described_in_Section_9.1.3.1._The_human_resource_management_plan_provides_guidance_on_how_project_human__resources_should_be_defined,_staffed,_managed,_and_eventually_released._It_can_also_contain_roles_and_responsibilities,__project_organization_charts,_and_the_staffing_management_plan,_which_form_a_key_input_to_identify_risk_process._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Scope_Baseline">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_scope_baseline_is_the_approved_version_of_a_scope_statement,_work_breakdown_structure_(WBS),_and_its_associated_WBS_dictionary,_that_can_be_changed_only_through_formal_change_control_procedures_and_is_used_as_a_basis_for_comparison._It_is_a_component_of_the_project_management_plan"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_scope_baseline_is_the_approved_version_of_a_scope_statement,_work_breakdown_structure_(WBS),_and_its_associated_WBS_dictionary,_that_can_be_changed_only_through_formal_change_control_procedures_and_is_used_as_a_basis_for_comparison._It_is_a_component_of_the_project_management_plan."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.6_Scope_Baseline_Described_in_Section_5.4.3.1._Project_assumptions_are_found_in_the_project_scope_statement._Uncertainty_in__project_assumptions_should_be_evaluated_as_potential_causes_of_project_risk._The_WBS_is_a_critical_input_to_identifying_risks_as_it_facilitates_an_understanding_of_the_potential_risks_at_both__the_micro_and_macro_levels._Risks_can_be_identified_and_subsequently_tracked_at_summary,_control_account,_and/or__work_package_levels._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.1.2_Scope_Baseline_Described_in_Section_5.4.3.1._Projects_of_a_common_or_recurrent_type_tend_to_have_more_well-understood_risks.__Projects_using_state-of-the-art_or_first-of-its-kind_technology,_and_highly_complex_projects,_tend_to_have_more__uncertainty._This_can_be_evaluated_by_examining_the_scope_baseline._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__329_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Activity_cost_Estimates">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Activity_cost_estimates_are_quantitative_assessments_of_the_probable_costs_required_to_complete_project_work._Cost_estimates_can_be_presented_in_summary_form_or_in_detail._Costs_are_estimated_for_all_resources_that_are_applied_to_the_activity_cost_estimate._This_includes,_but_is_not_limited_to,_direct_labor,_materials,_equipment,_services,_facilities,_information_technology,_and_special_categories_such_as_cost_of_financing_(including_interest_charges),_an_inflation_allowance,_exchange_rates,_or_a_cost_contingency_reserve._Indirect_costs,_if_they_are_included_in_the_project_estimate,_can_be_included_at_the_activity_level_or_at_higher_levels."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.7_Activity_cost_Estimates_Described_in_Section_7.2.3.1._Activity_cost_estimate_reviews_are_useful_in_identifying_risks_as_they_provide_a__quantitative_assessment_of_the_likely_cost_to_complete_scheduled_activities_and_ideally_are_expressed_as_a_range,__with_the_width_of_the_range_indicating_the_degree(s)_of_risk._The_review_may_result_in_projections_indicating_the__estimate_is_either_sufficient_or_insufficient_to_complete_the_activity_(i.e.,_pose_a_risk_to_the_project)._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Activity_duration_Estimates">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Activity_duration_estimates_are_quantitative_assessments_of_the_likely_number_of_time_periods_that_are_required_to_complete_an_activity._Duration_estimates_do_not_include_any_lags_as_described_in_Section_6.3.2.3._Activity_duration_estimates_may_include_some_indication_of_the_range_of_possible_results."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.8_Activity_duration_Estimates_Described_in_Section_6.5.3.1._Activity_duration_estimate_reviews_are_useful_in_identifying_risks_related_to_the_time__allowances_for_the_activities_or_project_as_a_whole,_again_with_the_width_of_the_range_of_such_estimates_indicating__the_relative_degree(s)_of_risk._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#_Project_documents">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.10_Project_documents_Project_documents_provide_the_project_team_with_information_about_decisions_that_help_better_identify_project__risks._Project_documents_improve_cross-team_and_stakeholder_communications_and_include,_but_are_not_limited_to:_&#9;_Project_charter,_&#9;_Project_schedule,_&#9;_Schedule_network_diagrams,_&#9;_Issue_log,_&#9;_Quality_checklist,_and_&#9;_Other_information_proven_to_be_valuable_in_identifying_risks._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#_Procurement_documents">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.11_Procurement_documents_Defined_in_Section_12.1.3.3._If_the_project_requires_external_procurement_of_resources,_procurement__documents_become_a_key_input_to_the_Identify_Risks_process._The_complexity_and_the_level_of_detail_of_the__11_procurement_documents_should_be_consistent_with_the_value_of,_and_risks_associated_with,_planned_procurement._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#_Enterprise_Environmental_Factors">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Enterprise_environmental_factors_refer_to_conditions,_not_under_the_control_of_the_project_team,_that_influence,_constrain,_or_direct_the_project._Enterprise_environmental_factors_are_considered_inputs_to_most_planning_processes,_may_enhance_or_constrain_project_management_options,_and_may_have_a_positive_or_negative_influence_on_the_outcome"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.12_Enterprise_Environmental_Factors_Described_in_Section_2.1.5._Enterprise_environmental_factors_that_can_influence_the_Identify_Risks_process__include,_but_are_not_limited_to:_&#9;_Published_information,_including_commercial_databases,_&#9;_Academic_studies,_&#9;_Published_checklists,_&#9;_Benchmarking,_&#9;_Industry_studies,_and_&#9;_Risk_attitudes._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__323_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#_organizational_Process_Assets">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Organizational_process_assets_are_the_plans,_processes,_policies,_procedures,_and_knowledge_bases_specific_to_and_used_by_the_performing_organization._They_include_any_artifact,_practice,_or_knowledge_from_any_or_all_of_the_organizations_involved_in_the_project_that_can_be_used_to_perform_or_govern_the_project._These_process_assets_include_formal_and_informal_plans,_processes,_policies,_procedures,_and_knowledge_bases,_specific_to_and_used_by_the_performing_organization._The_process_assets_also_include_the_organization’s_knowledge_bases_such_as_lessons_learned_and_historical_information._Organizational_process_assets_may_include_completed_schedules,_risk_data,_and_earned_value_data._Organizational_process_assets_are_inputs_to_most_planning_processes._Throughout_the_project,_the_project_team_members_may_update_and_add_to_the_organizational_process_assets_as_necessary._Organizational_process_assets_may_be_grouped_into_two_categories:_(1)_processes_and_procedures,_and_(2)_corporate_knowledge_base"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.1.13_organizational_Process_Assets_Described_in_Section_2.1.4._Organizational_process_assets_that_can_influence_the_Identify_Risks_process_include,__but_are_not_limited_to:_&#9;_Project_files,_including_actual_data,_&#9;_Organizational_and_project_process_controls,_&#9;_Risk_statement_formats_or_templates,_and_&#9;_Lessons_learned._11.2.2_Identify_risks:_tools_and_techniques_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_Management_Plan">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.3.1_risk_Management_Plan_The_risk_management_plan_is_a_component_of_the_project_management_plan_and_describes_how_risk_management__activities_will_be_structured_and_performed._The_risk_management_plan_includes_the_following:_&#9;__Methodology._Defines_the_approaches,_tools,_and_data_sources_that_will_be_used_to_perform_risk__management_on_the_project._&#9;__roles_and_responsibilities._Defines_the_lead,_support,_and_risk_management_team_members_for_each__type_of_activity_in_the_risk_management_plan,_and_clarifies_their_responsibilities._&#9;__Budgeting._Estimates_funds_needed,_based_on_assigned_resources,_for_inclusion_in_the_cost_baseline_and__establishes_protocols_for_application_of_contingency_and_management_reserves._&#9;__timing._Defines_when_and_how_often_the_risk_management_processes_will_be_performed_throughout_the__project_life_cycle,_establishes_protocols_for_application_of_schedule_contingency_reserves,_and_establishes__risk_management_activities_for_inclusion_in_the_project_schedule._316_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__risk_categories._Provide_a_means_for_grouping_potential_causes_of_risk._Several_approaches_can_be__used,_for_example,_a_structure_based_on_project_objectives_by_category._A_risk_breakdown_structure_(RBS)__helps_the_project_team_to_look_at_many_sources_from_which_project_risk_may_arise_in_a_risk_identification__exercise._Different_RBS_structures_will_be_appropriate_for_different_types_of_projects._An_organization_can__use_a_previously_prepared_custom_categorization_framework,_which_may_take_the_form_of_a_simple_list_of__categories_or_may_be_structured_into_an_RBS._The_RBS_is_a_hierarchical_representation_of_risks_according__to_their_risk_categories._An_example_is_shown_in_Figure_11-4._Beta_Distribution_Triangular_Distribution_0.1_0.1_11_0.0_0.0_Beta_and_triangular_distributions_are_frequently_used_in_quantitative_risk_analysis._The_data_shown_in_the_figure__on_the_left_(Beta_Distribution)_is_one_example_of_a_family_of_such_distributions_determined_by_two_&quot;shape__parameters&quot;._Other_commonly_used_distributions_include_the_uniform,_normal_and_lognormal._In_these_charts__the_horizontal_(X)_axes_represent_possible_values_of_time_or_cost_and_the_vertical_(Y)_axes_represent_relative__likelihood.__Figure_11-4._Example_of_a_risk_Breakdown_Structure_(rBS)_&#9;__definitions_of_risk_probability_and_impact._The_quality_and_credibility_of_the_risk_analysis_requires_that__different_levels_of_risk_probability_and_impact_be_defined_that_are_specific_to_the_project_context._General__definitions_of_probability_levels_and_impact_levels_are_tailored_to_the_individual_project_during_the_Plan__Risk_Management_process_for_use_in_subsequent_processes._Table_11-1_is_an_example_of_definitions_of__negative_impacts_that_could_be_used_in_evaluating_risk_impacts_related_to_four_project_objectives._(Similar__tables_may_be_established_with_a_positive_impact_perspective)._Table_11-1_illustrates_both_relative_and__numerical_(in_this_case,_nonlinear)_approaches._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__317_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_table_11-1._definition_of_Impact_Scales_for_Four_Project_objectives_Defined_Conditions_for_Impact_Scales_of_a_Risk_on_Major_Project_Objectives__(Examples_are_shown_for_negative_impacts_only)___Relative_or_numerical_scales_are_shown_Project__Very_low_/0.05_Low_/0.10_Moderate_/0.20_High_/0.40_Very_high_/0.80_Objective_Insignificant_cost_&lt;_10%_cost__10_–_20%_cost_20_–_40%_cost_&gt;_40%_cost_Cost_increase_increase_increase_increase_increase_Insignificant_time_&lt;_5%_time_5_–_10%_time_10_–_20%_time_&gt;_20%_time_Time_increase_increase_increase_increase_increase_Scope_reduction_Project_end_item_Scope_decrease_Minor_areas_of_Major_areas_of_Scope_unacceptable_to_is_effectively_barely_noticeable_scope_affected_scope_affected_sponsor_useless_Only_very_demanding_Quality_reduction_Quality_reduction_Project_end_item__Quality_degradation_Quality_applications__requires_sponsor_unacceptable_to_is_effectively_barely_noticeable_are_affected_approval_sponsor_useless_This_table_presents_examples_of_risk_impact_definitions_for_four_different_project_objectives._They_should_be_tailored_in_the__Risk_Management_Planning_process_to_the_individual_project_and_to_the_organization's_risk_thresholds._Impact_definitions_can_be__developed_for_opportunities_in_a_similar_way._&#9;___Probability_and_impact_matrix._A_probability_and_impact_matrix_is_a_grid_for_mapping_the_probability__of_each_risk_occurrence_and_its_impact_on_project_objectives_if_that_risk_occurs._Risks_are_prioritized__according_to_their_potential_implications_for_having_an_effect_on_the_project’s_objectives._A_typical__approach_to_prioritizing_risks_is_to_use_a_look-up_table_or_a_probability_and_impact_matrix._The_specific__combinations_of_probability_and_impact_that_lead_to_a_risk_being_rated_as_“high,”_“moderate,”_or_“low”__importance_are_usually_set_by_the_organization._&#9;__revised_stakeholders’_tolerances._Stakeholders’_tolerances,_as_they_apply_to_the_specific_project,_may__be_revised_in_the_Plan_Risk_Management_process._&#9;__reporting_formats._Reporting_formats_define_how_the_outcomes_of_the_risk_management_process_will__be_documented,_analyzed,_and_communicated._It_describes_the_content_and_format_of_the_risk_register_as__well_as_any_other_risk_reports_required._&#9;__tracking._Tracking_documents_how_risk_activities_will_be_recorded_for_the_benefit_of_the_current_project__and_how_risk_management_processes_will_be_audited._318_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_11.2_Identify_risks_Identify_Risks_is_the_process_of_determining_which_risks_may_affect_the_project_and_documenting_their__characteristics._The_key_benefit_of_this_process_is_the_documentation_of_existing_risks_and_the_knowledge_and_ability__it_provides_to_the_project_team_to_anticipate_events._The_inputs,_tools_and_techniques,_and_outputs_of_this_process__are_depicted_in_Figure_11-5._Figure_11-6_depicts_the_data_flow_diagram_of_the_process._Inputs_Tools_&amp;_Techniques_Outputs__.1_Risk_management_plan_.1_Documentation_reviews_.1_Risk_register__.2_Cost_management_plan_.2_Information_gathering____.3_Schedule_management_______techniques____plan_.3_Checklist_analysis__.4_Quality_management_plan_.4_Assumptions_analysis__.5_Human_resource_____.5_Diagramming_techniques____management_plan_.6_SWOT_analysis__.6_Scope_baseline_.7_Expert_judgment__.7_Activity_cost_estimates__.8_Activity_duration________estimates__.9_Stakeholder_register_11_.10_Project_documents_.11_Procurement_documents_.12_Enterprise_environmental______factors_.13_Organizational_process________assets_Figure_11-5._Identify_risks:_Inputs,_tools_&amp;_techniques,_and_outputs_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__319_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_5.4_Create_WBS__Scope_baseline_6.1_Plan_Schedule_Management__Schedule_management_plan_6.5_Project_Risk_Management_Estimate_Activity_Durations_11.1___Activity_duration_estimates_Plan_Risk_Management_7.1_Project_Cost_7.2_Management__Risk_management_plan_Estimate_Costs__Cost_management_plan___11.2_8.1_7.2_Identify_Plan_Quality_Estimate_Costs_Risks_Management__Activity_cost_estimates__Risk_register_12.1_8.1_Plan_Plan_Quality_Procurement_Management_11.3_11.5_Management_Perform_Plan_Risk__Quality_management_plan_Qualitative_Responses_Risk_Analysis_9.1_Plan_Human_11.4_11.6_Resource_Perform_Control_Management_Quantitative_Risks_Risk_Analysis__Human_resource___management_plan_12.1_Plan_Procurement_Management__Procurement_documents_13.1_Identify_Stakeholders__Stakeholder_register_Enterprise/_Organization__Organizational_process_assets__Enterprise_environmental__factors_Project_Documents_Figure_11-6._Identify_risks_data_Flow_diagram_320_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Participants_in_risk_identification_activities_may_include_the_following:_project_manager,_project_team_members,__risk_management_team_(if_assigned),_customers,_subject_matter_experts_from_outside_the_project_team,_end__users,_other_project_managers,_stakeholders,_and_risk_management_experts._While_these_personnel_are_often_key__participants_for_risk_identification,_all_project_personnel_should_be_encouraged_to_identify_potential_risks._Identify_risks_is_an_iterative_process,_because_new_risks_may_evolve_or_become_known_as_the_project_progresses__through_its_life_cycle._The_frequency_of_iteration_and_participation_in_each_cycle_will_vary_by_situation._The_format_of__the_risk_statements_should_be_consistent_to_ensure_that_each_risk_is_understood_clearly_and_unambiguously_in_order__to_support_effective_analysis_and_response_development._The_risk_statement_should_support_the_ability_to_compare__the_relative_effect_of_one_risk_against_others_on_the_project._The_process_should_involve_the_project_team_so_they_can__develop_and_maintain_a_sense_of_ownership_and_responsibility_for_the_risks_and_associated_risk_response_actions.__Stakeholders_outside_the_project_team_may_provide_additional_objective_information._11.2.1_Identify_risks:_Inputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.1.1_risk_Management_Plan_Described_in_Section_11.1.3.1._Key_elements_of_the_risk_management_plan_used_in_the_Perform_Qualitative_Risk__Analysis_process_include_roles_and_responsibilities_for_conducting_risk_management,_budgets,_schedule_activities__for_risk_management,_risk_categories,_definitions_of_probability_and_impact,_the_probability_and_impact_matrix,__and_revised_stakeholders’_risk_tolerances._These_inputs_are_usually_tailored_to_the_project_during_the_Plan_Risk__Management_process._If_they_are_not_available,_they_may_be_developed_during_the_Perform_Qualitative_Risk_Analysis__process._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.1_risk_Management_Plan_Described_in_Section_11.1.3.1._The_risk_management_plan_provides_guidelines,_methods,_and_tools_to_be_used_in__quantitative_risk_analysis._11_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.1.1_risk_Management_Plan_Important_components_of_the_risk_management_plan_include_roles_and_responsibilities,_risk_analysis_definitions,__11_timing_for_reviews_(and_for_eliminating_risks_from_review),_and_risk_thresholds_for_low,_moderate,_and_high_risks._Risk__thresholds_help_identify_those_risks_for_which_specific_responses_are_needed._"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_risk_management_plan_is_a_component_of_the_project_management_plan_and_describes_how_risk_management_activities_will_be_structured_and_performed."/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_register">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.3.1_risk_register_The_primary_output_from_Identify_Risks_is_the_initial_entry_into_the_risk_register._The_risk_register_is_a_document__in_which_the_results_of_risk_analysis_and_risk_response_planning_are_recorded._It_contains_the_outcomes_of_the_other__risk_management_processes_as_they_are_conducted,_resulting_in_an_increase_in_the_level_and_type_of_information__contained_in_the_risk_register_over_time._The_preparation_of_the_risk_register_begins_in_the_Identify_Risks_process__11_with_the_following_information,_and_then_becomes_available_to_other_project_management_and_risk_management__processes:_&#9;__List_of_identified_risks._The_identified_risks_are_described_in_as_much_detail_as_is_reasonable._A__structure_for_describing_risks_using_risk_statements_may_be_applied,_for_example,_EVENT_may_occur__causing_IMPACT,_or_If_CAUSE_exists,_EVENT_may_occur_leading_to_EFFECT._In_addition_to_the_list_of__identified_risks,_the_root_causes_of_those_risks_may_become_more_evident._These_are_the_fundamental__conditions_or_events_that_may_give_rise_to_one_or_more_identified_risks._They_should_be_recorded_and__used_to_support_future_risk_identification_for_this_and_other_projects._&#9;__List_of_potential_responses._Potential_responses_to_a_risk_may_sometimes_be_identified_during_the_Identify__Risks_process._These_responses,_if_identified_in_this_process,_should_be_used_as_inputs_to_the_Plan_Risk__Responses_process._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__327_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_11.3_Perform_Qualitative_risk_Analysis_Perform_Qualitative_Risk_Analysis_is_the_process_of_prioritizing_risks_for_further_analysis_or_action_by_assessing__and_combining_their_probability_of_occurrence_and_impact._The_key_benefit_of_this_process_is_that_it_enables_project__managers_to_reduce_the_level_of_uncertainty_and_to_focus_on_high-priority_risks._The_inputs,_tools_and_techniques,__and_outputs_of_this_process_are_depicted_in_Figure_11-8._Figure_11-9_depicts_the_data_flow_diagram_of_the_process._Inputs_Tools_&amp;_Techniques_Outputs_.1_Risk_management_plan_.1_Risk_probability_and___.1_Project_documents___.2_Scope_baseline___impact_assessment___updates_.3_Risk_register_.2_Probability_and_impact___.4_Enterprise_environmental_____matrix___factors_.3_Risk_data_quality___.5_Organizational_process_____assessment___assets_.4_Risk_categorization_.5_Risk_urgency_assessment_.6_Expert_judgment_Figure_11-8._Perform_Qualitative_risk_Analysis:_Inputs,_tools_&amp;_techniques,_and_outputs_Project_Risk_Management_11.1_11.2_Plan_Risk_Identify_Management_Risks_5.4_Create__Risk_management___Risk_register_WBS___plan__Scope_baseline_11.3_Perform_Project_Qualitative_Documents__Enterprise_Risk_Analysis__Project_documents____environmental___updates___factors__Organizational_Enterprise/___process_assets_Organization_Figure_11-9._Perform_Qualitative_risk_Analysis_data_Flow_diagram_328_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Perform_Qualitative_Risk_Analysis_assesses_the_priority_of_identified_risks_using_their_relative_probability_or__likelihood_of_occurrence,_the_corresponding_impact_on_project_objectives_if_the_risks_occur,_as_well_as_other__factors_such_as_the_time_frame_for_response_and_the_organization’s_risk_tolerance_associated_with_the_project__constraints_of_cost,_schedule,_scope,_and_quality._Such_assessments_reflect_the_risk_attitude_of_the_project__team_and_other_stakeholders._Effective_assessment_therefore_requires_explicit_identification_and_management__of_the_risk_approaches_of_key_participants_in_the_Perform_Qualitative_Risk_Analysis_process._Where_these_risk__approaches_introduce_bias_into_the_assessment_of_identified_risks,_attention_should_be_paid_to_identifying_bias__and_correcting_for_it._Establishing_definitions_of_the_levels_of_probability_and_impact_can_reduce_the_influence_of_bias._The_time__criticality_of_risk-related_actions_may_magnify_the_importance_of_a_risk._An_evaluation_of_the_quality_of_the__available_information_on_project_risks_also_helps_to_clarify_the_assessment_of_the_risk’s_importance_to_the_project._Perform_Qualitative_Risk_Analysis_is_usually_a_rapid_and_cost-effective_means_of_establishing_priorities_for_Plan__Risk_Responses_and_lays_the_foundation_for_Perform_Quantitative_Risk_Analysis,_if_required._The_Perform_Qualitative__Risk_Analysis_process_is_performed_regularly_throughout_the_project_life_cycle,_as_defined_in_the_project’s_risk__management_plan._This_process_can_lead_into_Perform_Quantitative_Risk_Analysis_(Section_11.4)_or_directly_into_Plan__11_Risk_Responses_(Section_11.5)._11.3.1_Perform_Qualitative_risk_Analysis:_Inputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.1.3_risk_register_Described_in_Section_11.2.3.1._The_risk_register_contains_the_information_that_will_be_used_to_assess_and_prioritize__risks._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.1.4_risk_register_Described_in_Section_11.2.3.1._The_risk_register_is_used_as_a_reference_point_for_performing_quantitative_risk__analysis._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.1.2_risk_register_The_risk_register_refers_to_identified_risks,_root_causes_of_risks,_lists_of_potential_responses,_risk_owners,_symptoms__and_warning_signs,_the_relative_rating_or_priority_list_of_project_risks,_risks_requiring_responses_in_the_near_term,_risks__for_additional_analysis_and_response,_trends_in_qualitative_analysis_results,_and_a_watch_list,_which_is_a_list_of_low-_priority_risks_within_the_risk_register._11.5.2_Plan_risk_responses:_tools_and_techniques_Several_risk_response_strategies_are_available._The_strategy_or_mix_of_strategies_most_likely_to_be_effective__should_be_selected_for_each_risk._Risk_analysis_tools,_such_as_decision_tree_analysis_(Section_11.4.2.2),_can_be__used_to_choose_the_most_appropriate_responses._Specific_actions_are_developed_to_implement_that_strategy,__including_primary_and_backup_strategies,_as_necessary._A_fallback_plan_can_be_developed_for_implementation__if_the_selected_strategy_turns_out_not_to_be_fully_effective_or_if_an_accepted_risk_occurs._Secondary_risks_should__also_be_reviewed._Secondary_risks_are_risks_that_arise_as_a_direct_result_of_implementing_a_risk_response._A__contingency_reserve_is_often_allocated_for_time_or_cost._If_developed,_it_may_include_identification_of_the_conditions__that_trigger_its_use._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__343_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.1.2_risk_register_The_risk_register_has_key_inputs_that_include_identified_risks_and_risk_owners,_agreed-upon_risk_responses,__control_actions_for_assessing_the_effectiveness_of_response_plans,_risk_responses,_specific_implementation_actions,__symptoms_and_warning_signs_of_risk,_residual_and_secondary_risks,_a_watch_list_of_low-priority_risks,_and_the_time__and_cost_contingency_reserves._The_watch_list_is_within_the_risk_register_and_provides_a_list_of_low-priority_risks._350_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#The_primary_output_from_Identify_Risks_is_the_initial_entry_into_the_risk_register._The_risk_register_is_a_document_in_which_the_results_of_risk_analysis_and_risk_response_planning_are_recorded._It_contains_the_outcomes_of_the_other_risk_management_processes_as_they_are_conducted,_resulting_in_an_increase_in_the_level_and_type_of_information_contained_in_the_risk_register_over_time._The_preparation_of_the_risk_register_begins_in_the_Identify_Risks_process_with_the_following_information,_and_then_becomes_available_to_other_project_management_and_risk_management_processes"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Work_Performance_data">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Work_performance_data_are_the_raw_observations_and_measurements_identified_during_activities_being_performed_to_carry_out_the_project_work._Data_are_often_viewed_as_the_lowest_level_of_detail_from_which_information_is_derived_by_other_processes._Data_is_gathered_through_work_execution_and_passed_to_the_controlling_processes_of_each_process_area_for_further_analysis."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.1.3_Work_Performance_data_Described_in_Section_4.3.3.2._Work_performance_data_related_to_various_performance_results_possibly_impacted__by_risks_includes,_but_is_not_limited_to:_&#9;_Deliverable_status,_&#9;_Schedule_progress,_and_&#9;_Costs_incurred._"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Work_Performance_reports">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:comment rdf:resource="http://example.com/h#Work_performance_reports_are_the_physical_or_electronic_representation_of_work_performance_information_compiled_in_project_documents,_intended_to_generate_decisions,_actions,_or_awareness._Project_information_may_be_communicated_verbally_from_person_to_person._However,_in_order_to_record,_store,_and_sometimes_distribute_work_performance_information,_a_physical_or_electronic_representation_in_the_form_of_project_documents_is_required._Work_performance_reports_are_a_subset_of_project_documents,_which_are_intended_to_create_awareness_and_generate_decisions_or_actions._Specific_work_performance_metrics_may_be_defined_at_the_start_of_the_project_and_included_in_the_normal_work_performance_reports_provided_to_key_stakeholders."/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.1.4_Work_Performance_reports_Described_in_Section_4.4.3.2._Work_performance_reports_take_information_from_performance_measurements__and_analyze_it_to_provide_project_work_performance_information_including_variance_analysis,_earned_value_data,_and__forecasting_data._These_data_points_could_be_impactful_in_controlling_performance_related_risks._11.6.2_control_risks:_tools_and_techniques_11_"/>
+        <pr:is_inputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+  </rdf:Description>
+  <owl:Class rdf:about="http://example.com/h#means"/>
+  <rdf:Description rdf:about="http://example.com/h#is_tools_and_techniques">
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Analytical_techniques">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.2.1_Analytical_techniques_Analytical_techniques_are_used_to_understand_and_define_the_overall_risk_management_context_of_the_project.__Risk_management_context_is_a_combination_of_stakeholder_risk_attitudes_and_the_strategic_risk_exposure_of_a_given__11_project_based_on_the_overall_project_context._For_example,_a_stakeholder_risk_profile_analysis_may_be_performed_to__grade_and_qualify_the_project_stakeholder_risk_appetite_and_tolerance._Other_techniques,_such_as_the_use_of_strategic__risk_scoring_sheets,_are_used_to_provide_a_high-level_assessment_of_the_risk_exposure_of_the_project_based_on_the__overall_project_context._Depending_on_these_assessments,_the_project_team_can_allocate_appropriate_resources_and__focus_on_the_risk_management_activities._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_Management"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Expert_Judgment">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.2.2_Expert_Judgment_To_ensure_a_comprehensive_establishment_of_the_risk_management_plan,_judgment,_and_expertise_should_be__considered_from_groups_or_individuals_with_specialized_training_or_knowledge_on_the_subject_area,_such_as:_&#9;_Senior_management,_&#9;_Project_stakeholders,_&#9;_Project_managers_who_have_worked_on_projects_in_the_same_area_(directly_or_through_lessons_learned),_&#9;_Subject_matter_experts_(SMEs)_in_business_or_project_area,_&#9;_Industry_groups_and_consultants,_and_&#9;_Professional_and_technical_associations._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__315_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.7_Expert_Judgment_Risks_may_be_identified_directly_by_experts_with_relevant_experience_with_similar_projects_or_business_areas.__Such_experts_should_be_identified_by_the_project_manager_and_invited_to_consider_all_aspects_of_the_project_and__suggest_possible_risks_based_on_their_previous_experience_and_areas_of_expertise._The_experts’_bias_should_be_taken__into_account_in_this_process._11.2.3_Identify_risks:_outputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.6_Expert_Judgment_Expert_judgment_is_required_to_assess_the_probability_and_impact_of_each_risk_to_determine_its_location_in__the_matrix_shown_in_Figure_11-10._Experts_generally_are_those_having_experience_with_similar,_recent_projects.__Gathering_expert_judgment_is_often_accomplished_with_the_use_of_risk_facilitation_workshops_or_interviews._The__experts’_bias_should_be_taken_into_account_in_this_process._11.3.3_Perform_Qualitative_risk_Analysis:_outputs_11_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.2.3_Expert_Judgment_Expert_judgment_(ideally_using_experts_with_relevant,_recent_experience)_is_required_to_identify_potential_cost__and_schedule_impacts,_to_evaluate_probability,_and_to_define_inputs_such_as_probability_distributions_into_the_tools._Expert_judgment_also_comes_into_play_in_the_interpretation_of_the_data._Experts_should_be_able_to_identify_the__weaknesses_of_the_tools_as_well_as_their_strengths._Experts_may_determine_when_a_specific_tool_may_or_may_not_be__more_appropriate_given_the_organization’s_capabilities_and_culture._11.4.3_Perform_Quantitative_risk_Analysis:_outputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.2.4_Expert_Judgment_Expert_judgment_is_input_from_knowledgeable_parties_pertaining_to_the_actions_to_be_taken_on_a_specific_and__defined_risk._Expertise_may_be_provided_by_any_group_or_person_with_specialized_education,_knowledge,_skill,__experience,_or_training_in_establishing_risk_responses._11.5.3_Plan_risk_responses:_outputs_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Meetings">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.1.2.3_Meetings_Project_teams_hold_planning_meetings_to_develop_the_risk_management_plan._Attendees_at_these_meetings_may__include_the_project_manager,_selected_project_team_members_and_stakeholders,_anyone_in_the_organization_with__responsibility_to_manage_the_risk_planning_and_execution_activities,_and_others,_as_needed._High-level_plans_for_conducting_the_risk_management_activities_are_defined_in_these_meetings._Risk_management__cost_elements_and_schedule_activities_should_be_developed_for_inclusion_in_the_project_budget_and_schedule,__respectively._Risk_contingency_reserve_application_approaches_may_be_established_or_reviewed._Risk_management__responsibilities_should_be_assigned._General_organizational_templates_for_risk_categories_and_definitions_of_terms__such_as_levels_of_risk,_probability_by_type_of_risk,_impact_by_type_of_objectives,_and_the_probability_and_impact_matrix__will_be_tailored_to_the_specific_project._If_templates_for_other_steps_in_the_process_do_not_exist,_they_may_be_generated__in_these_meetings._The_outputs_of_these_activities_are_summarized_in_the_risk_management_plan._11.1.3_Plan_risk_Management:_outputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.6_Meetings_Project_risk_management_should_be_an_agenda_item_at_periodic_status_meetings._The_amount_of_time_required__for_that_item_will_vary,_depending_upon_the_risks_that_have_been_identified,_their_priority,_and_difficulty_of_response.__The_more_often_risk_management_is_practiced,_the_easier_it_becomes._Frequent_discussions_about_risk_make_it_more__likely_that_people_will_identify_risks_and_opportunities._352_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_11.6.3_control_risks:_outputs_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_Management"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#documentation_reviews">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.1_documentation_reviews_A_structured_review_of_the_project_documentation_may_be_performed,_including_plans,_assumptions,_previous__project_files,_agreements,_and_other_information._The_quality_of_the_plans,_as_well_as_consistency_between_those__plans_and_the_project_requirements_and_assumptions,_may_be_indicators_of_risk_in_the_project._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Information_Gathering_techniques">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.2_Information_Gathering_techniques_Examples_of_information_gathering_techniques_used_in_identifying_risks_can_include:_&#9;__Brainstorming._The_goal_of_brainstorming_is_to_obtain_a_comprehensive_list_of_project_risks._The_project__team_usually_performs_brainstorming,_often_with_a_multidisciplinary_set_of_experts_who_are_not_part_of_the__team._Ideas_about_project_risk_are_generated_under_the_leadership_of_a_facilitator,_either_in_a_traditional__free-form_brainstorm_session_or_structured_mass_interviewing_techniques._Categories_of_risk,_such_as_in_a__risk_breakdown_structure,_can_be_used_as_a_framework._Risks_are_then_identified_and_categorized_by_type__of_risk_and_their_definitions_are_refined._&#9;__delphi_technique._The_Delphi_technique_is_a_way_to_reach_a_consensus_of_experts._Project_risk_experts__participate_in_this_technique_anonymously._A_facilitator_uses_a_questionnaire_to_solicit_ideas_about_the__important_project_risks._The_responses_are_summarized_and_are_then_recirculated_to_the_experts_for__further_comment._Consensus_may_be_reached_in_a_few_rounds_of_this_process._The_Delphi_technique_helps__reduce_bias_in_the_data_and_keeps_any_one_person_from_having_undue_influence_on_the_outcome._324_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Interviewing._Interviewing_experienced_project_participants,_stakeholders,_and_subject_matter_experts__helps_to_identify_risks._&#9;__root_cause_analysis._Root-cause_analysis_is_a_specific_technique_used_to_identify_a_problem,_discover__the_underlying_causes_that_lead_to_it,_and_develop_preventive_action._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#checklist_Analysis">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.3_checklist_Analysis_Risk_identification_checklists_are_developed_based_on_historical_information_and_knowledge_that_has_been__accumulated_from_previous_similar_projects_and_from_other_sources_of_information._The_lowest_level_of_the_RBS__can_also_be_used_as_a_risk_checklist._While_a_checklist_may_be_quick_and_simple,_it_is_impossible_to_build_an__exhaustive_one,_and_care_should_be_taken_to_ensure_the_checklist_is_not_used_to_avoid_the_effort_of_proper_risk__identification._The_team_should_also_explore_items_that_do_not_appear_on_the_checklist._Additionally,_the_checklist__should_be_pruned_from_time_to_time_to_remove_or_archive_related_items._The_checklist_should_be_reviewed_during__project_closure_to_incorporate_new_lessons_learned_and_improve_it_for_use_on_future_projects._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Assumptions_Analysis">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.4_Assumptions_Analysis_11_Every_project_and_its_plan_is_conceived_and_developed_based_on_a_set_of_hypotheses,_scenarios,_or_assumptions.__Assumptions_analysis_explores_the_validity_of_assumptions_as_they_apply_to_the_project._It_identifies_risks_to_the__project_from_inaccuracy,_instability,_inconsistency,_or_incompleteness_of_assumptions._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#diagramming_techniques">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.5_diagramming_techniques_Risk_diagramming_techniques_may_include:_&#9;__cause_and_effect_diagrams._These_are_also_known_as_Ishikawa_or_fishbone_diagrams_and_are_useful_for__identifying_causes_of_risks._&#9;__System_or_process_flow_charts._These_show_how_various_elements_of_a_system_interrelate_and_the__mechanism_of_causation._&#9;__Influence_diagrams._These_are_graphical_representations_of_situations_showing_causal_influences,_time__ordering_of_events,_and_other_relationships_among_variables_and_outcomes,_as_shown_in_Figure_11-7._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__325_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Project_Risk_Estimates_Condition_Project_Deliverables_Activity_Figure_11-7._Influence_diagram_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#SWot_Analysis">
+        <rdf:type rdf:resource="http://example.com/h#Identify_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.2.2.6_SWot_Analysis_This_technique_examines_the_project_from_each_of_the_strengths,_weaknesses,_opportunities,_and_threats_(SWOT)__perspectives_to_increase_the_breadth_of_identified_risks_by_including_internally_generated_risks._The_technique_starts__with_identification_of_strengths_and_weaknesses_of_the_organization,_focusing_on_either_the_project,_organization,__or_the_business_area_in_general._SWOT_analysis_then_identifies_any_opportunities_for_the_project_that_arise_from__organizational_strengths,_and_any_threats_arising_from_organizational_weaknesses._The_analysis_also_examines__the_degree_to_which_organizational_strengths_offset_threats,_as_well_as_identifying_opportunities_that_may_serve_to__overcome_weaknesses._326_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Identify_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_Probability_and_Impact_Assessment">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.1_risk_Probability_and_Impact_Assessment_Risk_probability_assessment_investigates_the_likelihood_that_each_specific_risk_will_occur._Risk_impact__assessment_investigates_the_potential_effect_on_a_project_objective_such_as_schedule,_cost,_quality,_or_performance,__including_both_negative_effects_for_threats_and_positive_effects_for_opportunities._Probability_and_impact_are_assessed_for_each_identified_risk._Risks_can_be_assessed_in_interviews_or_meetings__with_participants_selected_for_their_familiarity_with_the_risk_categories_on_the_agenda._Project_team_members_and__knowledgeable_persons_external_to_the_project_are_included._The_level_of_probability_for_each_risk_and_its_impact_on_each_objective_is_evaluated_during_the_interview_or_meeting.__Explanatory_detail,_including_assumptions_justifying_the_levels_assigned,_are_also_recorded._Risk_probabilities__and_impacts_are_rated_according_to_the_definitions_given_in_the_risk_management_plan._Risks_with_low_ratings_of__probability_and_impact_will_be_included_within_the_risk_register_as_part_of_the_watch_list_for_future_monitoring._330_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Probability_and_Impact_Matrix">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.2_Probability_and_Impact_Matrix_Risks_can_be_prioritized_for_further_quantitative_analysis_and_planning_risk_responses_based_on_their_risk_rating.__Ratings_are_assigned_to_risks_based_on_their_assessed_probability_and_impact._Evaluation_of_each_risk’s_importance__and_priority_for_attention_is_typically_conducted_using_a_look-up_table_or_a_probability_and_impact_matrix._Such_a__matrix_specifies_combinations_of_probability_and_impact_that_lead_to_rating_the_risks_as_low,_moderate,_or_high__priority._Descriptive_terms_or_numeric_values_can_be_used_depending_on_organizational_preference._Each_risk_is_rated_on_its_probability_of_occurrence_and_impact_on_an_objective_if_it_does_occur._The_organization__should_determine_which_combinations_of_probability_and_impact_result_in_a_classification_of_high_risk,_moderate_risk,__and_low_risk._In_a_black-and-white_matrix,_these_conditions_are_denoted_using_different_shades_of_gray._Specifically__in_Figure_11-10,_the_dark_gray_area_(with_the_largest_numbers)_represents_high_risk:_the_medium_gray_area_(with__the_smallest_numbers)_represents_low_risk,_and_the_light_gray_area_(with_in-between_numbers)_represents_moderate__risk._Usually,_these_risk-rating_rules_are_specified_by_the_organization_in_advance_of_the_project_and_included_in__organizational_process_assets._Risk_rating_rules_can_be_tailored_in_the_Plan_Risk_Management_process_to_the_specific__project._11_Probability_and_Impact_Matrix_Probability_Threats_Opportunities_0.90_0.05_0.09_0.18_0.36_0.72_0.72_0.36_0.18_0.09_0.05_0.70_0.04_0.07_0.14_0.28_0.56_0.56_0.28_0.14_0.07_0.04_0.50_0.03_0.05_0.10_0.20_0.40_0.40_0.20_0.10_0.05_0.03_0.30_0.02_0.03_0.06_0.12_0.24_0.24_0.12_0.06_0.03_0.02_0.10_0.01_0.01_0.02_0.04_0.08_0.08_0.04_0.02_0.01_0.01_0.05/_0.10/_0.20/_0.40/_0.80/_0.80/_0.40/_0.20/_0.10/_0.05/_Very_Low_Low_Moderate_High_Very_High_Very_High_High_Moderate_Low_Very_Low_Impact_(numerical_scale)_on_an_objective__(e.g.,_cost,_time,_scope_or_quality)_Each_risk_is_rated_on_its_probability_of_occurring_and_impact_on_an_objective_if_it_does_occur._The_organization's__thresholds_for_low,_moderate_or_high_risks_are_shown_in_the_matrix_and_determine_whether_the_risk_is_scored__as_high,_moderate_or_low_for_that_objective._Figure_11-10._Probability_and_Impact_Matrix_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__331_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_As_illustrated_in_Figure_11-10,_an_organization_can_rate_a_risk_separately_for_each_objective_(e.g.,_cost,_time,__and_scope)._In_addition,_it_may_develop_ways_to_determine_one_overall_rating_for_each_risk._Finally,_opportunities__and_threats_are_handled_in_the_same_matrix_using_definitions_of_the_different_levels_of_impact_that_are_appropriate__for_each._The_risk_score_helps_guide_risk_responses._For_example,_risks_that_have_a_negative_impact_on_objectives,__otherwise_known_as_threats_if_they_occur,_and_that_are_in_the_high-risk_(dark_gray)_zone_of_the_matrix,_may_require__priority_action_and_aggressive_response_strategies._Threats_found_in_the_low-risk_(medium_gray)_zone_may_not__require_proactive_management_action_beyond_being_placed_in_the_risk_register_as_part_of_the_watch_list_or_adding__a_contingency_reserve._Similarly_for_opportunities,_those_in_the_high-risk_(dark_gray)_zone,_which_may_be_obtained__most_easily_and_offer_the_greatest_benefit,_should_be_targeted_first._Opportunities_in_the_low-risk_(medium_gray)_zone__should_be_monitored._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_data_Quality_Assessment">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.3_risk_data_Quality_Assessment_Risk_data_quality_assessment_is_a_technique_to_evaluate_the_degree_to_which_the_data_about_risks_is_useful__for_risk_management._It_involves_examining_the_degree_to_which_the_risk_is_understood_and_the_accuracy,_quality,__reliability,_and_integrity_of_the_data_about_the_risk._The_use_of_low-quality_risk_data_may_lead_to_a_qualitative_risk_analysis_of_little_use_to_the_project._If_data_quality_is__unacceptable,_it_may_be_necessary_to_gather_better_data._Often,_the_collection_of_information_about_risks_is_difficult,__and_consumes_more_time_and_resources_than_originally_planned._The_values_used_in_the_example_in_Figure_11-10__are_representative._The_numbers_of_steps_in_the_scale_are_usually_established_when_defining_the_risk_attitude_of_the__organization._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_categorization">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.4_risk_categorization_Risks_to_the_project_can_be_categorized_by_sources_of_risk_(e.g.,_using_the_RBS),_the_area_of_the_project_affected__(e.g.,_using_the_WBS),_or_other_useful_categories_(e.g.,_project_phase)_to_determine_the_areas_of_the_project_most__exposed_to_the_effects_of_uncertainty._Risks_can_also_be_categorized_by_common_root_causes._This_technique_helps__determine_work_packages,_activities,_project_phases_or_even_roles_in_the_project,_which_can_lead_to_the_development__of_effective_risk_responses._332_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_urgency_Assessment">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.2.5_risk_urgency_Assessment_Risks_requiring_near-term_responses_may_be_considered_more_urgent_to_address._Indicators_of_priority_may__include_probability_of_detecting_the_risk,_time_to_affect_a_risk_response,_symptoms_and_warning_signs,_and_the__risk_rating._In_some_qualitative_analyses,_the_assessment_of_risk_urgency_is_combined_with_the_risk_ranking_that_is__determined_from_the_probability_and_impact_matrix_to_give_a_final_risk_severity_rating._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#data_Gathering_and_representation_techniques">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource='http://example.com/h#11.4.2.1_data_Gathering_and_representation_techniques_&#9;__Interviewing._Interviewing_techniques_draw_on_experience_and_historical_data_to_quantify_the_probability__and_impact_of_risks_on_project_objectives._The_information_needed_depends_upon_the_type_of_probability__distributions_that_will_be_used._For_instance,_information_would_be_gathered_on_the_optimistic_(low),__pessimistic_(high),_and_most_likely_scenarios_for_some_commonly_used_distributions._Examples_of_three-_point_estimates_for_cost_are_shown_in_Figure_11-13._Additional_information_on_three-point_estimates__appears_in_Estimate_Activity_Durations_(Section_6.5)_and_Estimate_Costs_(Section_7.2)._Documenting_the__rationale_of_the_risk_ranges_and_the_assumptions_behind_them_are_important_components_of_the_risk__interview_because_they_can_provide_insight_on_the_reliability_and_credibility_of_the_analysis._Range_of_Project_Cost_Estimates__WBS_Element_Low_Most_Likely_High_Design_$4M_$6M_$10M_Build_$16M_$20M_$35M_Test_$11M_$15M_$23M_Total_Project_$31M_$41M_$68M_Interviewing_relevant_stakeholders_helps_determine_the_three-point_estimates_for_each_WBS_element_for_triangular,_beta_or_other_distributions._In_this_example,_the_likelihood_of_completing_the_project_at_or_below_the_most_likely_estimate_of_$41_million_is_relatively_small_as_shown_in__the_simulation_results_in_Figure_11-17_(Cost_Risk_Simulation_Results)._Figure_11-13._range_of_Project_cost_Estimates_collected_during_the_risk_Interview_336_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Probability_distributions._Continuous_probability_distributions,_which_are_used_extensively_in_modeling__and_simulation,_represent_the_uncertainty_in_values_such_as_durations_of_schedule_activities_and_costs__of_project_components._Discrete_distributions_can_be_used_to_represent_uncertain_events,_such_as_the__outcome_of_a_test_or_a_possible_scenario_in_a_decision_tree._Two_examples_of_widely_used_continuous__distributions_are_shown_in_Figure_11-14._These_distributions_depict_shapes_that_are_compatible_with_the__data_typically_developed_during_the_quantitative_risk_analysis._Uniform_distributions_can_be_used_if_there__is_no_obvious_value_that_is_more_likely_than_any_other_between_specified_high_and_low_bounds,_such_as_in__the_early_concept_stage_of_design._Beta_Distribution_Triangular_Distribution_0.1_0.1_11_0.0_0.0_Beta_and_triangular_distributions_are_frequently_used_in_quantitative_risk_analysis._The_data_shown_in_the_figure__on_the_left_(Beta_Distribution)_is_one_example_of_a_family_of_such_distributions_determined_by_two_"shape__parameters"._Other_commonly_used_distributions_include_the_uniform,_normal_and_lognormal._In_these_charts__the_horizontal_(X)_axes_represent_possible_values_of_time_or_cost_and_the_vertical_(Y)_axes_represent_relative__likelihood.__Figure_11-14._Examples_of_commonly_used_Probability_distributions_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__337_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_'/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Quantitative_risk_Analysis_and_Modeling_techniques">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.2.2_Quantitative_risk_Analysis_and_Modeling_techniques_Commonly_used_techniques_use_both_event-oriented_and_project-oriented_analysis_approaches,_including:_&#9;__Sensitivity_analysis._Sensitivity_analysis_helps_to_determine_which_risks_have_the_most_potential__impact_on_the_project._It_helps_to_understand_how_the_variations_in_project’s_objectives_correlate_with__variations_in_different_uncertainties._Conversely,_it_examines_the_extent_to_which_the_uncertainty_of__each_project_element_affects_the_objective_being_studied_when_all_other_uncertain_elements_are_held_at__their_baseline_values._One_typical_display_of_sensitivity_analysis_is_the_tornado_diagram_(Figure_11-15),__which_is_useful_for_comparing_relative_importance_and_impact_of_variables_that_have_a_high_degree_of__uncertainty_to_those_that_are_more_stable._The_Tornado_diagram_is_also_helpful_in_analyzing_risk-taking__scenarios_enabled_on_specific_risks_whose_quantitative_analysis_highlights_possible_benefits_greater__than_corresponding_identified_negative_impacts._A_tornado_diagram_is_a_special_type_of_bar_chart_used__in_sensitivity_analysis_for_comparing_the_relative_importance_of_the_variables._In_a_tornado_diagram,__the_Y-axis_contains_each_type_of_uncertainty_at_base_values,_and_the_X-axis_contains_the_spread_or__correlation_of_the_uncertainty_to_the_studied_output._In_this_figure,_each_uncertainty_contains_a_horizontal__bar_and_is_ordered_vertically_to_show_uncertainties_with_a_decreasing_spread_from_the_base_values._Risk_1_Risk_2_Risk_3_Risk_4_KEY_Negative_Impact_Risk_5_Positive_Impact_Risk_6_-15,000_____-10,000______-5,000____________0____________5,000______10,000______15,000______20,000_Figure_11-15._Example_of_tornado_diagram_338_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Expected_monetary_value_analysis._Expected_monetary_value_(EMV)_analysis_is_a_statistical_concept__that_calculates_the_average_outcome_when_the_future_includes_scenarios_that_may_or_may_not_happen__(i.e.,_analysis_under_uncertainty)._The_EMV_of_opportunities_are_generally_expressed_as_positive_values,__while_those_of_threats_are_expressed_as_negative_values._EMV_requires_a_risk-neutral_assumption—_neither_risk_averse_nor_risk_seeking._EMV_for_a_project_is_calculated_by_multiplying_the_value_of_each__possible_outcome_by_its_probability_of_occurrence_and_adding_the_products_together._A_common_use_of__this_type_of_analysis_is_a_decision_tree_analysis_(Figure_11-16)._Decision_Definition_Decision_Node_Chance_Node_Net_Path_Value_Input:_Scenario_Probability,__Input:_Cost_of_Each_Decision__Computed:__Decision_to__Reward_if_it_Occurs_Output:_Decision_Made_Payoffs_minus_Costs__be_Made_Output:_Expected_Monetary__along_Path_Value_(EMV)__60%_Strong_Demand_$80M_($200M)_$80M_=_$200M_–_$120M_Build_New_Plant_(Invest_$120M)_$36M_=_.60_($80M)_+_40%_Weak_Demand_-$30M______________.40_(–$30M)_($90M)_11_EMV_(before_costs)_of_Build__–$30M_=_$90M_–_$120M_Build_or_Upgrade?_New_Plant_considering_demand___Decision_EMV_=_$46M_60%_Strong_Demand_(the_larger_of_$36M__$70M_($120M)_and_$46M)_$70M_=_$120M_–_$50M_Upgrade_Plant_(Invest_$50M)_Decision_Node_Chance_Node_$__4__6__M_____=____..6400__(($$7100MM))_+_40%_Wea($k_6D0eMm)and_$10M_End_of_Branch_EMV_(before_costs)_of_Upgrade__$10M_=_$60M_–_$50M_Plant_considering_demand___Note_1:_The_decision_tree_shows_how_to_make_a_decision_between_alternative_capital_strategies_(represented_as_“decision_____nodes”)_when_the_environment_contains_uncertain_elements_(represented_as_“chance_nodes”)._Note_2:_Here,_a_decision_is_being_made_whether_to_invest_$120M_US_to_build_a_new_plant_or_to_instead_invest_only_$50M_US___to_upgrade_the_existing_plant._For_each_decision,_the_demand_(which_is_uncertain,_and_therefore_represents_a___“chance_node”)_must_be_accounted_for._For_example,_strong_demand_leads_to_$200M_revenue_with_the_new_plant___but_only_$120M_US_for_the_upgraded_plant,_perhaps_due_to_capacity_limitations_of_the_upgraded_plant._The_end_of___each_branch_shows_the_net_effect_of_the_payoffs_minus_costs._For_each_decision_branch,_all_effects_are_added_(see___shaded_areas)_to_determine_the_overall_Expected_Monetary_Value_(EMV)_of_the_decision._Remember_to_account_for___the_investment_costs._From_the_calculations_in_the_shaded_areas,_the_upgraded_plant_has_a_higher_EMV_of_$46M_–____also_the_EMV_of_the_overall_decision._(This_choice_also_represents_the_lowest_risk,_avoiding_the_worst_case_possible_____outcome_of_a_loss_of_$30M)._Figure_11-16._decision_tree_diagram_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__339_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Modeling_and_simulation._A_project_simulation_uses_a_model_that_translates_the_specified_detailed__uncertainties_of_the_project_into_their_potential_impact_on_project_objectives._Simulations_are_typically__performed_using_the_Monte_Carlo_technique._In_a_simulation,_the_project_model_is_computed_many_times__(iterated),_with_the_input_values_(e.g.,_cost_estimates_or_activity_durations)_chosen_at_random_for_each__iteration_from_the_probability_distributions_of_these_variables._A_histogram_(e.g.,_total_cost_or_completion__date)_is_calculated_from_the_iterations._For_a_cost_risk_analysis,_a_simulation_uses_cost_estimates._For_a__schedule_risk_analysis,_the_schedule_network_diagram_and_duration_estimates_are_used._The_output_from_a__cost_risk_simulation_using_the_three-element_model_and_risk_ranges_is_shown_in_Figure_11-17._It_illustrates__the_respective_probability_of_achieving_specific_cost_targets._Similar_curves_can_be_developed_for_other__project_objectives._Total_Project_Cost_Cumulative_Chart_100%_Mean_=_$46.67M_75%_y_bilit_a_50%_b_o_Pr_25%_12%_0%_$41M_________________$50M_$30.00M_____________$38.75M____________$47.50M_____________$56.25M____________$65.00M_Cost_This_cumulative_distribution,_assuming_the_data_ranges_in_Figure_11-13_and_triangular_distributions,_shows_that_the__project_is_only_12_percent_likely_to_meet_the_$41_million_most_likely_cost_estimate._If_a_conservative_organization_wants__a_75%_likelihood_of_success,_a_budget_of_$50_million_(a_contingency_of_nearly_22_%_($50M_-_$41M)/$41M))_is_required._Figure_11-17._cost_risk_Simulation_results_340_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Strategies_for_negative_risks_or_threats">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.2.1_Strategies_for_negative_risks_or_threats_Three_strategies,_which_typically_deal_with_threats_or_risks_that_may_have_negative_impacts_on_project_objectives__if_they_occur,_are:_avoid,_transfer,_and_mitigate._The_fourth_strategy,_accept,_can_be_used_for_negative_risks_or_threats__as_well_as_positive_risks_or_opportunities._Each_of_these_risk_response_strategies_have_varied_and_unique_influence__on_the_risk_condition._These_strategies_should_be_chosen_to_match_the_risk’s_probability_and_impact_on_the_project’s__overall_objectives._Avoidance_and_mitigation_strategies_are_usually_good_strategies_for_critical_risks_with_high_impact,__while_transference_and_acceptance_are_usually_good_strategies_for_threats_that_are_less_critical_and_with_low_overall__impact._The_four_strategies_for_dealing_with_negative_risks_or_threats_are_further_described_as_follows:_&#9;__Avoid._Risk_avoidance_is_a_risk_response_strategy_whereby_the_project_team_acts_to_eliminate_the_threat_or__protect_the_project_from_its_impact._It_usually_involves_changing_the_project_management_plan_to_eliminate__the_threat_entirely._The_project_manager_may_also_isolate_the_project_objectives_from_the_risk’s_impact_or__change_the_objective_that_is_in_jeopardy._Examples_of_this_include_extending_the_schedule,_changing_the__strategy,_or_reducing_scope._The_most_radical_avoidance_strategy_is_to_shut_down_the_project_entirely.__Some_risks_that_arise_early_in_the_project_can_be_avoided_by_clarifying_requirements,_obtaining_information,__improving_communication,_or_acquiring_expertise._&#9;__transfer._Risk_transference_is_a_risk_response_strategy_whereby_the_project_team_shifts_the_impact_of__a_threat_to_a_third_party,_together_with_ownership_of_the_response._Transferring_the_risk_simply_gives__another_party_responsibility_for_its_management—it_does_not_eliminate_it._Transferring_does_not_mean__disowning_the_risk_by_transferring_it_to_a_later_project_or_another_person_without_his_or_her_knowledge_or__agreement._Risk_transference_nearly_always_involves_payment_of_a_risk_premium_to_the_party_taking_on__the_risk._Transferring_liability_for_risk_is_most_effective_in_dealing_with_financial_risk_exposure._Transference__tools_can_be_quite_diverse_and_include,_but_are_not_limited_to,_the_use_of_insurance,_performance_bonds,__warranties,_guarantees,_etc._Contracts_or_agreements_may_be_used_to_transfer_liability_for_specified_risks__to_another_party._For_example,_when_a_buyer_has_capabilities_that_the_seller_does_not_possess,_it_may_be__prudent_to_transfer_some_work_and_its_concurrent_risk_contractually_back_to_the_buyer._In_many_cases,_use__of_a_cost-plus_contract_may_transfer_the_cost_risk_to_the_buyer,_while_a_fixed-price_contract_may_transfer__risk_to_the_seller._344_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Mitigate._Risk_mitigation_is_a_risk_response_strategy_whereby_the_project_team_acts_to_reduce_the__probability_of_occurrence_or_impact_of_a_risk._It_implies_a_reduction_in_the_probability_and/or_impact_of_an__adverse_risk_to_be_within_acceptable_threshold_limits._Taking_early_action_to_reduce_the_probability_and/or__impact_of_a_risk_occurring_on_the_project_is_often_more_effective_than_trying_to_repair_the_damage_after_the__risk_has_occurred._Adopting_less_complex_processes,_conducting_more_tests,_or_choosing_a_more_stable__supplier_are_examples_of_mitigation_actions._Mitigation_may_require_prototype_development_to_reduce_the__risk_of_scaling_up_from_a_bench-scale_model_of_a_process_or_product._Where_it_is_not_possible_to_reduce__probability,_a_mitigation_response_might_address_the_risk_impact_by_targeting_linkages_that_determine_the__severity._For_example,_designing_redundancy_into_a_system_may_reduce_the_impact_from_a_failure_of_the__original_component._&#9;__Accept._Risk_acceptance_is_a_risk_response_strategy_whereby_the_project_team_decides_to_acknowledge__the_risk_and_not_take_any_action_unless_the_risk_occurs._This_strategy_is_adopted_where_it_is_not_possible__or_cost-effective_to_address_a_specific_risk_in_any_other_way._This_strategy_indicates_that_the_project__team_has_decided_not_to_change_the_project_management_plan_to_deal_with_a_risk,_or_is_unable_to_identify__any_other_suitable_response_strategy._This_strategy_can_be_either_passive_or_active._Passive_acceptance__requires_no_action_except_to_document_the_strategy,_leaving_the_project_team_to_deal_with_the_risks_as__11_they_occur,_and_to_periodically_review_the_threat_to_ensure_that_it_does_not_change_significantly._The__most_common_active_acceptance_strategy_is_to_establish_a_contingency_reserve,_including_amounts_of__time,_money,_or_resources_to_handle_the_risks._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Strategies_for_Positive_risks_or_opportunities">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.2.2_Strategies_for_Positive_risks_or_opportunities_Three_of_the_four_responses_are_suggested_to_deal_with_risks_with_potentially_positive_impacts_on_project_objectives.__The_fourth_strategy,_accept,_can_be_used_for_negative_risks_or_threats_as_well_as_positive_risks_or_opportunities._These__strategies,_described_below,_are_to_exploit,_share,_enhance,_and_accept._&#9;__Exploit._The_exploit_strategy_may_be_selected_for_risks_with_positive_impacts_where_the_organization_wishes__to_ensure_that_the_opportunity_is_realized._This_strategy_seeks_to_eliminate_the_uncertainty_associated_with__a_particular_upside_risk_by_ensuring_the_opportunity_definitely_happens._Examples_of_directly_exploiting__responses_include_assigning_an_organization’s_most_talented_resources_to_the_project_to_reduce_the_time__to_completion_or_using_new_technologies_or_technology_upgrades_to_reduce_cost_and_duration_required_to__realize_project_objectives._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__345_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Enhance._The_enhance_strategy_is_used_to_increase_the_probability_and/or_the_positive_impacts_of_an__opportunity._Identifying_and_maximizing_key_drivers_of_these_positive-impact_risks_may_increase_the__probability_of_their_occurrence._Examples_of_enhancing_opportunities_include_adding_more_resources_to__an_activity_to_finish_early._&#9;__Share._Sharing_a_positive_risk_involves_allocating_some_or_all_of_the_ownership_of_the_opportunity_to_a__third_party_who_is_best_able_to_capture_the_opportunity_for_the_benefit_of_the_project._Examples_of_sharing__actions_include_forming_risk-sharing_partnerships,_teams,_special-purpose_companies,_or_joint_ventures,__which_can_be_established_with_the_express_purpose_of_taking_advantage_of_the_opportunity_so_that_all__parties_gain_from_their_actions._&#9;__Accept._Accepting_an_opportunity_is_being_willing_to_take_advantage_of_the_opportunity_if_it_arises,_but__not_actively_pursuing_it._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#contingent_response_Strategies">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.2.3_contingent_response_Strategies_Some_responses_are_designed_for_use_only_if_certain_events_occur._For_some_risks,_it_is_appropriate_for__the_project_team_to_make_a_response_plan_that_will_only_be_executed_under_certain_predefined_conditions,_if__it_is_believed_that_there_will_be_sufficient_warning_to_implement_the_plan._Events_that_trigger_the_contingency__response,_such_as_missing_intermediate_milestones_or_gaining_higher_priority_with_a_supplier,_should_be_defined__and_tracked._Risk_responses_identified_using_this_technique_are_often_called_contingency_plans_or_fallback_plans__and_include_identified_triggering_events_that_set_the_plans_in_effect._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_reassessment">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.1_risk_reassessment_Control_Risks_often_results_in_identification_of_new_risks,_reassessment_of_current_risks,_and_the_closing_of_risks__that_are_outdated._Project_risk_reassessments_should_be_regularly_scheduled._The_amount_and_detail_of_repetition__that_are_appropriate_depends_on_how_the_project_progresses_relative_to_its_objectives._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#risk_Audits">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.2_risk_Audits_Risk_audits_examine_and_document_the_effectiveness_of_risk_responses_in_dealing_with_identified_risks_and_their__root_causes,_as_well_as_the_effectiveness_of_the_risk_management_process._The_project_manager_is_responsible_for__ensuring_that_risk_audits_are_performed_at_an_appropriate_frequency,_as_defined_in_the_project’s_risk_management__plan._Risk_audits_may_be_included_during_routine_project_review_meetings,_or_the_team_may_choose_to_hold_separate__risk_audit_meetings._The_format_for_the_audit_and_its_objectives_should_be_clearly_defined_before_the_audit_is_conducted._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__351_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Variance_and_trend_Analysis">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.3_Variance_and_trend_Analysis_Many_control_processes_employ_variance_analysis_to_compare_the_planned_results_to_the_actual_results._For_the__purposes_of_controlling_risks,_trends_in_the_project’s_execution_should_be_reviewed_using_performance_information.__Earned_value_analysis_and_other_methods_of_project_variance_and_trend_analysis_may_be_used_for_monitoring_overall__project_performance._Outcomes_from_these_analyses_may_forecast_potential_deviation_of_the_project_at_completion__from_cost_and_schedule_targets._Deviation_from_the_baseline_plan_may_indicate_the_potential_impact_of_threats_or__opportunities._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#technical_Performance_Measurement">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.4_technical_Performance_Measurement_Technical_performance_measurement_compares_technical_accomplishments_during_project_execution_to_the__schedule_of_technical_achievement._It_requires_the_definition_of_objective,_quantifiable_measures_of_technical__performance,_which_can_be_used_to_compare_actual_results_against_targets._Such_technical_performance_measures__may_include_weight,_transaction_times,_number_of_delivered_defects,_storage_capacity,_etc._Deviation,_such_as__demonstrating_more_or_less_functionality_than_planned_at_a_milestone,_can_help_to_forecast_the_degree_of_success__in_achieving_the_project’s_scope._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#reserve_Analysis">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.2.5_reserve_Analysis_Throughout_execution_of_the_project,_some_risks_may_occur_with_positive_or_negative_impacts_on_budget_or__schedule_contingency_reserves._Reserve_analysis_compares_the_amount_of_the_contingency_reserves_remaining_to__the_amount_of_risk_remaining_at_any_time_in_the_project_in_order_to_determine_if_the_remaining_reserve_is_adequate._"/>
+        <pr:is_tools_and_techniques rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+  </rdf:Description>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#has_outputs">
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_Management"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Identify_risks"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_responses"/>
+    <rdfs:domain rdf:resource="http://example.com/h#control_risks"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#is">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:domain rdf:resource="http://example.com/h#technology"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#risks">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#procedures"/>
+  <owl:Class rdf:about="http://example.com/h#plans"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#work">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#communications">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <rdf:Description rdf:about="http://example.com/h#is_outputs">
+    <rdfs:domain rdf:resource="http://example.com/h#risk_Management_Plan"/>
+    <rdfs:domain rdf:resource="http://example.com/h#risk_register"/>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Project_documents_updates">
+        <rdf:type rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.3.3.1_Project_documents_updates_Project_documents_that_may_be_updated_include,_but_are_not_limited_to:_&#9;__risk__register__updates.__As__new__information__becomes__available__through__the__qualitative__risk__assessment,_the_risk_register_is_updated._Updates_to_the_risk_register_may_include_assessments__of_probability_and_impacts_for_each_risk,_risk_ranking_or_scores,_risk_urgency_information_or_risk__categorization,_and_a_watch_list_for_low_probability_risks_or_risks_requiring_further_analysis._&#9;__Assumptions_log_updates._As_new_information_becomes_available_through_the_qualitative_risk__assessment,_assumptions_could_change._The_assumptions_log_needs_to_be_revisited_to_accommodate__this_new_information._Assumptions_may_be_incorporated_into_the_project_scope_statement_or_in_a__separate_assumptions_log._11.4_Perform_Quantitative_risk_Analysis_Perform_Quantitative_Risk_Analysis_is_the_process_of_numerically_analyzing_the_effect_of_identified_risks_on_overall__project_objectives._The_key_benefit_of_this_process_is_that_it_produces_quantitative_risk_information_to_support_decision__making_in_order_to_reduce_project_uncertainty._The_inputs,_tools_and_techniques,_and_outputs_of_this_process_are__depicted_in_Figure_11-11._Figure_11-12_depicts_the_data_flow_diagram_of_the_process._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__333_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Inputs_Tools_&amp;_Techniques_Outputs_.1_Risk_management_plan_.1_Data_gathering_and___.1_Project_documents___.2_Cost_management_plan___representation_______updates_.3_Schedule_management_____techniques___plan_.2_Quantitative_risk_analysis___.4_Risk_register___and_modeling_techniques_.5_Enterprise_environmental___.3_Expert_judgment___factors_.6_Organizational_process_____assets_Figure_11-11._Perform_Quantitative_risk_Analysis:_Inputs,_tools_&amp;_techniques,_and_outputs_Project_Risk_Management_6.1_Plan_Schedule_11.1_11.2_Management_Plan_Risk_Identify_Management_Risks_7.1__Risk_management___Risk_register_Plan_Cost___plan_Management__Schedule___management_plan_11.4__Cost_management_plan_Perform_Project_Quantitative_Documents__Project_documents__Risk_Analysis___updates__Organizational___process_assets__Enterprise_Enterprise/___environmental_Organization___factors_Figure_11-12._Perform_Quantitative_risk_Analysis_data_Flow_diagram_Perform_Quantitative_Risk_Analysis_is_performed_on_risks_that_have_been_prioritized_by_the_Perform_Qualitative__Risk_Analysis_process_as_potentially_and_substantially_impacting_the_project’s_competing_demands._The_Perform__Quantitative_Risk_Analysis_process_analyzes_the_effect_of_those_risks_on_project_objectives._It_is_used_mostly_to__evaluate_the_aggregate_effect_of_all_risks_affecting_the_project._When_the_risks_drive_the_quantitative_analysis,_the__process_may_be_used_to_assign_a_numerical_priority_rating_to_those_risks_individually._334_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Perform_Quantitative_Risk_Analysis_generally_follows_the_Perform_Qualitative_Risk_Analysis_process._In_some__cases,_it_may_not_be_possible_to_execute_the_Perform_Quantitative_Risk_Analysis_process_due_to_lack_of_sufficient__data_to_develop_appropriate_models._The_project_manager_should_exercise_expert_judgment_to_determine_the_need__for_and_the_viability_of_quantitative_risk_analysis._The_availability_of_time_and_budget,_and_the_need_for_qualitative_or__quantitative_statements_about_risk_and_impacts,_will_determine_which_method(s)_to_use_on_any_particular_project.__Perform_Quantitative_Risk_Analysis_should_be_repeated,_as_needed,_as_part_of_the_Control_Risks_process_to_determine__if_the_overall_project_risk_has_been_satisfactorily_decreased._Trends_may_indicate_the_need_for_more_or_less_focus_on__appropriate_risk_management_activities._11.4.1_Perform_Quantitative_risk_Analysis:_Inputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.4.3.1_Project_documents_updates_Project_documents_are_updated_with_information_resulting_from_quantitative_risk_analysis._For_example,_risk__register_updates_could_include:_&#9;__Probabilistic_analysis_of_the_project._Estimates_are_made_of_potential_project_schedule_and_cost__11_outcomes_listing_the_possible_completion_dates_and_costs_with_their_associated_confidence_levels.__This_output,_often_expressed_as_a_cumulative_frequency_distribution,_is_used_with_stakeholder_risk__tolerances_to_permit_quantification_of_the_cost_and_time_contingency_reserves._Such_contingency__reserves_are_needed_to_bring_the_risk_of_overrunning_stated_project_objectives_to_a_level_acceptable_to__the_organization._&#9;__Probability_of_achieving_cost_and_time_objectives._With_the_risks_facing_the_project,_the_probability__of_achieving_project_objectives_under_the_current_plan_can_be_estimated_using_quantitative_risk_analysis__results._For_instance,_in_Figure_11-17,_the_likelihood_of_achieving_the_cost_estimate_of_US$41_million_is__about_12%._&#9;__Prioritized_list_of_quantified_risks._This_list_includes_those_risks_that_pose_the_greatest_threat_or_present__the_greatest_opportunity_to_the_project._These_include_the_risks_that_may_have_the_greatest_effect_on_cost__contingency_and_those_that_are_most_likely_to_influence_the_critical_path._These_risks_may_be_evaluated,_in__some_cases,_through_a_tornado_diagram_generated_as_a_result_of_the_simulation_analysis._&#9;__trends_in_quantitative_risk_analysis_results._As_the_analysis_is_repeated,_a_trend_may_become_apparent__that_leads_to_conclusions_affecting_risk_responses._Organizational_historical_information_on_project_schedule,__cost,_quality,_and_performance_should_reflect_new_insights_gained_through_the_Perform_Quantitative_Risk__Analysis_process._Such_history_may_take_the_form_of_a_quantitative_risk_analysis_report._This_report_may__be_separate_from,_or_linked_to,_the_risk_register._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__341_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_11.5_Plan_risk_responses_Plan_Risk_Responses_is_the_process_of_developing_options_and_actions_to_enhance_opportunities_and_to_reduce__threats_to_project_objectives._The_key_benefit_of_this_process_is_that_it_addresses_the_risks_by_their_priority,_inserting__resources_and_activities_into_the_budget,_schedule_and_project_management_plan_as_needed._The_inputs,_tools_and__techniques,_and_outputs_of_this_process_are_depicted_in_Figure_11-18._Figure_11-19_depicts_the_data_flow_diagram__of_the_process._Inputs_Tools_&amp;_Techniques_Outputs_.1_Risk_management_plan_.1_Strategies_for_negative___.1_Project_management_plan___.2_Risk_register___risks_or_threats___updates_.2_Strategies_for_positive___.2_Project_documents_____risks_or_opportunities___updates_.3_Contingent_response_____strategies_.4_Expert_judgment_Figure_11-18._Plan_risk_responses:_Inputs,_tools_&amp;_techniques,_and_outputs_Project_Risk_Management_11.1_11.2_Plan_Risk_Identify_Management_Risks_Project_Documents__Risk_management___Risk_register___plan__Project_documents____updates_11.5_4.2__Plan_Risk_Develop_Project__Responses_Management__Project_management____plan_updates_Plan_Figure_11-19._Plan_risk_responses_data_Flow_diagram_342_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_The_Plan_Risk_Responses_process_follows_the_Perform_Quantitative_Risk_Analysis_process_(if_used)._Each_risk__response_requires_an_understanding_of_the_mechanism_by_which_it_will_address_the_risk._This_is_the_mechanism__used_to_analyze_if_the_risk_response_plan_is_having_the_desired_effect._It_includes_the_identification_and_assignment__of_one_person_(an_owner_for_risk_response)_to_take_responsibility_for_each_agreed-to_and_funded_risk_response._Risk__responses_should_be_appropriate_for_the_significance_of_the_risk,_cost-effective_in_meeting_the_challenge,_realistic__within_the_project_context,_agreed_upon_by_all_parties_involved,_and_owned_by_a_responsible_person._Selecting_the__optimum_risk_response_from_several_options_is_often_required._The_Plan_Risk_Responses_process_presents_commonly_used_approaches_to_planning_responses_to_the_risks.__Risks_include_threats_and_opportunities_that_can_affect_project_success,_and_responses_are_discussed_for_each._11.5.1_Plan_risk_responses:_Inputs_"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.3.2_Project_documents_updates_In_the_Plan_Risk_Responses_process,_several_project_documents_are_updated_as_needed._For_example,_when__appropriate_risk_responses_are_chosen_and_agreed_upon,_they_are_included_in_the_risk_register._The_risk_register__should_be_written_to_a_level_of_detail_that_corresponds_with_the_priority_ranking_and_the_planned_response._Often,_the__high_and_moderate_risks_are_addressed_in_detail._Risks_judged_to_be_of_low_priority_are_included_in_a_watch_list_for__periodic_monitoring._Updates_to_the_risk_register_can_include,_but_are_not_limited_to:_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__347_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;_Risk_owners_and_assigned_responsibilities;_&#9;_Agreed-upon_response_strategies;_&#9;_Specific_actions_to_implement_the_chosen_response_strategy;_&#9;_Trigger_conditions,_symptoms,_and_warning_signs_of_a_risk_occurrence;_&#9;_Budget_and_schedule_activities_required_to_implement_the_chosen_responses;_&#9;_Contingency_plans_and_triggers_that_call_for_their_execution;_&#9;__Fallback_plans_for_use_as_a_reaction_to_a_risk_that_has_occurred_and_the_primary_response_proves_to_be__inadequate;_&#9;__Residual_risks_that_are_expected_to_remain_after_planned_responses_have_been_taken,_as_well_as_those_that__have_been_deliberately_accepted;_&#9;_Secondary_risks_that_arise_as_a_direct_outcome_of_implementing_a_risk_response;_and_&#9;__Contingency_reserves_that_are_calculated_based_on_the_quantitative_risk_analysis_of_the_project_and_the__organization’s_risk_thresholds._Other_project_documents_updated_could_include:_&#9;__Assumptions_log_updates._As_new_information_becomes_available_through_the_application_of_risk__responses,_assumptions_could_change._The_assumptions_log_needs_to_be_revisited_to_accommodate_this__new_information._&#9;__technical_documentation_updates._As_new_information_becomes_available_through_the_application__of_risk_responses,_technical_approaches_and_physical_deliverables_may_change._Any_supporting__documentation_needs_to_be_revisited_to_accommodate_this_new_information._&#9;__change_requests._Planning_for_possible_risk_responses_can_often_result_in_recommendations_for_changes__to_the_resources,_activities,_cost_estimates,_and_other_items_identified_during_other_planning_processes.__When_such_recommendations_are_identified,_change_requests_are_generated_and_processed_through_the__Perform_Integrated_Change_Control_process._348_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_11.6_control_risks_Control_Risks_is_the_process_of_implementing_risk_response_plans,_tracking_identified_risks,_monitoring_residual__risks,_identifying_new_risks,_and_evaluating_risk_process_effectiveness_throughout_the_project._The_key_benefit_of__this_process_is_that_it_improves_efficiency_of_the_risk_approach_throughout_the_project_life_cycle_to_continuously__optimize_risk_responses._The_inputs,_tools_and_techniques,_and_outputs_of_this_process_are_depicted_in_Figure_11-20.__Figure_11-21_depicts_the_data_flow_diagram_of_the_process._Inputs_Tools_&amp;_Techniques_Outputs_.1_Project_management_plan_.1_Risk_reassessment_.1_Work_performance___.2_Risk_register_.2_Risk_audits___information_.3_Work_performance_data_.3_Variance_and_trend___.2_Change_requests_.4_Work_performance_____analysis_.3_Project_management_plan_____reports_.4_Technical_performance_____updates___measurement_.4_Project_documents___.5_Reserve_analysis___updates_.6_Meetings_.5_Organizational_process_____assets_updates_11_Figure_11-20._control_risks:_Inputs,_tools_&amp;_techniques,_and_outputs_Project_Risk_Management_4.2_Project_Develop_Project_Documents_Management_11.2__Project__Plan_Identify___documents__Risks___updates_4.4_Monitor_and__Risk_register_4.2__Control_Project__Project_Develop_Project__Work___management_Management___plan_Plan__Work_performance_11.6__Project_management_____reports_Control____plan_updates_4.5_Risks_Perform_Integrated_4.3__Work___Change_requests_Direct_and___performance__Change_Control_Manage___data_Project_Work__Work_performance_4.4___information_Monitor_and_Control_Project_Work____Organizational_process___assets_updates_Enterprise/_Organization_Figure_11-21._control_risks_data_Flow_diagram_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__349_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_Planned_risk_responses_that_are_included_in_the_risk_register_are_executed_during_the_life_cycle_of_the_project,_but__the_project_work_should_be_continuously_monitored_for_new,_changing,_and_outdated_risks._The_Control_Risks_process_applies_techniques,_such_as_variance_and_trend_analysis,_which_require_the_use_of__performance_information_generated_during_project_execution._Other_purposes_of_the_Control_Risks_process_are_to__determine_if:_&#9;_Project_assumptions_are_still_valid,_&#9;_Analysis_shows_an_assessed_risk_has_changed_or_can_be_retired,_&#9;_Risk_management_policies_and_procedures_are_being_followed,_and_&#9;__Contingency_reserves_for_cost_or_schedule_should_be_modified_in_alignment_with_the_current_risk__assessment._Control_Risks_can_involve_choosing_alternative_strategies,_executing_a_contingency_or_fallback_plan,_taking__corrective_action,_and_modifying_the_project_management_plan._The_risk_response_owner_reports_periodically_to_the__project_manager_on_the_effectiveness_of_the_plan,_any_unanticipated_effects,_and_any_correction_needed_to_handle__the_risk_appropriately._Control_Risks_also_includes_updating_the_organizational_process_assets,_including_project__lessons_learned_databases_and_risk_management_templates,_for_the_benefit_of_future_projects._11.6.1_control_risks:_Inputs_"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Plan_risk_responses"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Project_Management_Plan_updates">
+        <rdf:type rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.5.3.1_Project_Management_Plan_updates_Elements_of_the_project_management_plan_that_may_be_updated_as_a_result_of_carrying_out_this_process_include,__but_are_not_limited_to:_346_©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction.11_-_PROJECT_RISK_MANAGEMENT_&#9;__Schedule_management_plan._The_schedule_management_plan_is_updated_to_reflect_changes_in_process__and_practice_driven_by_the_risk_responses._This_may_include_changes_in_tolerance_or_behavior_related_to__resource_loading_and_leveling,_as_well_as_updates_to_the_schedule_strategy._&#9;__cost_management_plan._The_cost_management_plan_is_updated_to_reflect_changes_in_process_and__practice_driven_by_the_risk_responses._This_may_include_changes_in_tolerance_or_behavior_related_to__cost_accounting,_tracking,_and_reports,_as_well_as_updates_to_the_budget_strategy_and_how_contingency__reserves_are_consumed._&#9;__Quality_management_plan._The_quality_management_plan_is_updated_to_reflect_changes_in_process__and_practice_driven_by_the_risk_responses._This_may_include_changes_in_tolerance_or_behavior_related_to__requirements,_quality_assurance,_or_quality_control,_as_well_as_updates_to_the_requirements_documentation._&#9;__Procurement_management_plan._The_procurement_management_plan_may_be_updated_to_reflect__changes_in_strategy,_such_as_alterations_in_the_make-or-buy_decision_or_contract_type(s)_driven_by_the_risk__responses._&#9;__Human_resource_management_plan._The_staffing_management_plan,_part_of_the_human_resource__management_plan,_is_updated_to_reflect_changes_in_project_organizational_structure_and_resource__11_applications_driven_by_the_risk_responses._This_may_include_changes_in_tolerance_or_behavior_related_to__staff_allocation,_as_well_as_updates_to_the_resource_loading._&#9;__Scope_baseline._Because_of_new,_modified_or_omitted_work_generated_by_the_risk_responses,_the_scope__baseline_may_be_updated_to_reflect_those_changes._&#9;__Schedule_baseline._Because_of_new_work_(or_omitted_work)_generated_by_the_risk_responses,_the_schedule__baseline_may_be_updated_to_reflect_those_changes._&#9;__cost_baseline._Because_of_new_work_(or_omitted_work)_generated_by_the_risk_responses,_the_cost_baseline__may_be_updated_to_reflect_those_changes._"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.3.3_Project_Management_Plan_updates_If_the_approved_change_requests_have_an_effect_on_the_risk_management_processes,_the_corresponding_component__documents_of_the_project_management_plan_are_revised_and_reissued_to_reflect_the_approved_changes._The_elements__of_the_project_management_plan_that_may_be_updated_are_the_same_as_those_in_the_Plan_Risk_Responses_process._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__353_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction."/>
+        <pr:is_outputs rdf:resource="http://example.com/h#Plan_risk_responses"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#Work_Performance_Information">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.3.1_Work_Performance_Information_Work_performance_information,_as_a_Control_Risks_output,_provides_a_mechanism_to_communicate_and_support__project_decision_making._"/>
+        <pr:is_outputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+    <rdfs:domain>
+      <owl:NamedIndividual rdf:about="http://example.com/h#change_requests">
+        <rdf:type rdf:resource="http://example.com/h#control_risks"/>
+        <rdfs:isDefinedBy rdf:resource="http://example.com/h#11.6.3.2_change_requests_Implementing_contingency_plans_or_workarounds_sometimes_results_in_a_change_request._Change_requests_are__prepared_and_submitted_to_the_Perform_Integrated_Change_Control_process_(Section_4.5)._Change_requests_can__include_recommended_corrective_and_preventive_actions_as_well._&#9;__recommended_corrective_actions._These_are_activities_that_realign_the_performance_of_the_project__work_with_the_project_management_plan._They_include_contingency_plans_and_workarounds._The_latter__are_responses_that_were_not_initially_planned,_but_are_required_to_deal_with_emerging_risks_that_were__previously_unidentified_or_accepted_passively._11_&#9;__recommended_preventive_actions._These_are_activities_that_ensure_that_future_performance_of_the__project_work_is_aligned_with_the_project_management_plan._11.6.3.3_Project_Management_Plan_updates_If_the_approved_change_requests_have_an_effect_on_the_risk_management_processes,_the_corresponding_component__documents_of_the_project_management_plan_are_revised_and_reissued_to_reflect_the_approved_changes._The_elements__of_the_project_management_plan_that_may_be_updated_are_the_same_as_those_in_the_Plan_Risk_Responses_process._©2013_Project_Management_Institute._A_Guide_to_the_Project_Management_Body_of_Knowledge_(PMBOK®_Guide)_–_Fifth_Edition__353_Licensed_To:_Jorge_Diego_Fuentes_Sanchez_PMI_MemberID:_2399412_This_copy_is_a_PMI_Member_benefit,_not_for_distribution,_sale,_or_reproduction."/>
+        <pr:is_outputs rdf:resource="http://example.com/h#control_risks"/>
+      </owl:NamedIndividual>
+    </rdfs:domain>
+  </rdf:Description>
+  <owl:Class rdf:about="http://example.com/h#results"/>
+  <owl:Class rdf:about="http://example.com/h#axes"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#provides">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:domain rdf:resource="http://example.com/h#register"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <pr:technology rdf:about="http://example.com/h#important">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+  </pr:technology>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#explores">
+    <rdfs:domain rdf:resource="http://example.com/h#analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#described">
+    <rdfs:domain rdf:resource="http://example.com/h#technology"/>
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#cost">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#strengths"/>
+  <owl:Class rdf:about="http://example.com/h#project">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <pr:technology rdf:about="http://example.com/h#section">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+  </pr:technology>
+  <owl:Class rdf:about="http://example.com/h#report"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#has_inputs">
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_Management"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Identify_risks"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_responses"/>
+    <rdfs:domain rdf:resource="http://example.com/h#control_risks"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#management">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#tolerance"/>
+  <pr:analysis rdf:about="http://example.com/h#priority"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#received">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#loops"/>
+  <owl:Class rdf:about="http://example.com/h#barriers"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#revised">
+    <rdfs:domain rdf:resource="http://example.com/h#matrix"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#scope">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#gathering">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#example"/>
+  <owl:Class rdf:about="http://example.com/h#stakeholders">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://example.com/h#matrix"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#attendees">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#tolerances"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#clari˜es">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#modeling">
+    <rdfs:domain rdf:resource="http://example.com/h#analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#opportunities"/>
+  <owl:Class rdf:about="http://example.com/h#generate"/>
+  <owl:Class rdf:about="http://example.com/h#approaches"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#contained">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#tools"/>
+  <owl:Class rdf:about="http://example.com/h#projections"/>
+  <owl:Class rdf:about="http://example.com/h#schedule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <pr:plan rdf:about="http://example.com/h#guidance"/>
+  <owl:Class rdf:about="http://example.com/h#methods">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#modify"/>
+  <owl:Class rdf:about="http://example.com/h#choice"/>
+  <owl:Class rdf:about="http://example.com/h#conversations"/>
+  <owl:Class rdf:about="http://example.com/h#requirements">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+  </owl:Class>
+  <pr:information rdf:about="http://example.com/h#neededwhile"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#has_tools_and_techniques">
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_Management"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Identify_risks"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Qualitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Perform_Quantitative_risk_Analysis"/>
+    <rdfs:domain rdf:resource="http://example.com/h#Plan_risk_responses"/>
+    <rdfs:domain rdf:resource="http://example.com/h#control_risks"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#qualitativerisk"/>
+  <owl:Class rdf:about="http://example.com/h#data"/>
+  <owl:Class rdf:about="http://example.com/h#cycle"/>
+  <owl:Class rdf:about="http://example.com/h#events"/>
+  <owl:Class rdf:about="http://example.com/h#recommendations"/>
+  <owl:Class rdf:about="http://example.com/h#help"/>
+  <owl:Class rdf:about="http://example.com/h#responses">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#model"/>
+  <owl:Class rdf:about="http://example.com/h#components"/>
+  <owl:Class rdf:about="http://example.com/h#quantitativerisk"/>
+  <owl:Class rdf:about="http://example.com/h#projects"/>
+  <owl:Class rdf:about="http://example.com/h#consultantsstakeholders"/>
+  <pr:plan rdf:about="http://example.com/h#responsesšthe"/>
+  <owl:Class rdf:about="http://example.com/h#techniques">
+    <rdf:type rdf:resource="http://example.com/h#analysis"/>
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#figure"/>
+  <owl:Class rdf:about="http://example.com/h#software"/>
+  <owl:Class rdf:about="http://example.com/h#managers"/>
+  <owl:Class rdf:about="http://example.com/h#team"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#stakeholder">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#threats"/>
+  <pr:information rdf:about="http://example.com/h#techniquesexamples"/>
+  <owl:Class rdf:about="http://example.com/h#others"/>
+  <owl:Class rdf:about="http://example.com/h#time"/>
+  <owl:Class rdf:about="http://example.com/h#inputs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#dates"/>
+  <owl:Class rdf:about="http://example.com/h#process"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#organizes">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <pr:information rdf:about="http://example.com/h#commercial"/>
+  <owl:Class rdf:about="http://example.com/h#performance">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#reserves"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#updates">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <pr:plan rdf:about="http://example.com/h#baseline"/>
+  <owl:Class rdf:about="http://example.com/h#levels"/>
+  <owl:Class rdf:about="http://example.com/h#meetings">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#condition"/>
+  <owl:Class rdf:about="http://example.com/h#perception"/>
+  <owl:Class rdf:about="http://example.com/h#avoidance"/>
+  <owl:Class rdf:about="http://example.com/h#documents"/>
+  <owl:Class rdf:about="http://example.com/h#approach"/>
+  <owl:Class rdf:about="http://example.com/h#input"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#requires">
+    <rdfs:domain rdf:resource="http://example.com/h#analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#scales"/>
+  <owl:Class rdf:about="http://example.com/h#guidelines"/>
+  <owl:Class rdf:about="http://example.com/h#experts"/>
+  <pr:information rdf:about="http://example.com/h#status"/>
+  <owl:Class rdf:about="http://example.com/h#outputs"/>
+  <pr:information rdf:about="http://example.com/h#ef˜cient"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#including">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#lessons"/>
+  <owl:Class rdf:about="http://example.com/h#complete"/>
+  <owl:Class rdf:about="http://example.com/h#distribution"/>
+  <pr:plan rdf:about="http://example.com/h#insight"/>
+  <owl:Class rdf:about="http://example.com/h#associations"/>
+  <owl:Class rdf:about="http://example.com/h#manager"/>
+  <owl:Class rdf:about="http://example.com/h#repercussions"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#assesses">
+    <rdfs:domain rdf:resource="http://example.com/h#analysis"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#contractors"/>
+  <owl:Class rdf:about="http://example.com/h#technologies"/>
+  <owl:Class rdf:about="http://example.com/h#studies"/>
+  <pr:plan rdf:about="http://example.com/h#charter"/>
+  <owl:Class rdf:about="http://example.com/h#procurement"/>
+  <owl:Ontology rdf:about="http://example.com/h"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#needed">
+    <rdfs:domain rdf:resource="http://example.com/h#information"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#depending">
+    <rdfs:domain rdf:resource="http://example.com/h#context"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#websites"/>
+  <owl:Class rdf:about="http://example.com/h#communication"/>
+  <pr:analysis rdf:about="http://example.com/h#different"/>
+  <owl:Class rdf:about="http://example.com/h#responsibilities">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#examines"/>
+  <owl:Class rdf:about="http://example.com/h#reports"/>
+  <owl:Class rdf:about="http://example.com/h#resources"/>
+  <owl:Class rdf:about="http://example.com/h#appetite"/>
+  <owl:Class rdf:about="http://example.com/h#templates"/>
+  <owl:Class rdf:about="http://example.com/h#areas"/>
+  <pr:information rdf:about="http://example.com/h#summarizes"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#eg">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#press"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#updatesthe">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#development"/>
+  <owl:Class rdf:about="http://example.com/h#quality"/>
+  <owl:Class rdf:about="http://example.com/h#respond"/>
+  <owl:Class rdf:about="http://example.com/h#de˜nes"/>
+  <owl:Class rdf:about="http://example.com/h#diagrams"/>
+  <owl:Class rdf:about="http://example.com/h#elements"/>
+  <owl:Class rdf:about="http://example.com/h#documentation"/>
+  <owl:Class rdf:about="http://example.com/h#packages"/>
+  <owl:Class rdf:about="http://example.com/h#parameters"/>
+  <owl:DatatypeProperty rdf:about="http://example.com/h#describes">
+    <rdfs:domain rdf:resource="http://example.com/h#plan"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="http://example.com/h#˜les"/>
+  <owl:Class rdf:about="http://example.com/h#models"/>
+  <owl:Class rdf:about="http://example.com/h#distributions"/>
+  <owl:Class rdf:about="http://example.com/h#share"/>
+  <owl:Class rdf:about="http://example.com/h#estimates"/>
+  <pr:context rdf:about="http://example.com/h#assessments"/>
+  <owl:Class rdf:about="http://example.com/h#formats"/>
+  <owl:Class rdf:about="http://example.com/h#medium"/>
+  <owl:Class rdf:about="http://example.com/h#logs"/>
+  <owl:Class rdf:about="http://example.com/h#practices"/>
+  <owl:Class rdf:about="http://example.com/h#structure"/>
+  <owl:Class rdf:about="http://example.com/h#individuals"/>
+  <owl:Class rdf:about="http://example.com/h#challenges"/>
+  <owl:Class rdf:about="http://example.com/h#item"/>
+  <owl:Class rdf:about="http://example.com/h#reviewsa"/>
+  <pr:analysis rdf:about="http://example.com/h#validity"/>
+  <owl:Class rdf:about="http://example.com/h#factors"/>
+  <owl:Class rdf:about="http://example.com/h#variations"/>
+  <pr:plan rdf:about="http://example.com/h#vital"/>
+  <owl:Class rdf:about="http://example.com/h#organization"/>
+  <owl:Class rdf:about="http://example.com/h#measurements"/>
+  <owl:Class rdf:about="http://example.com/h#detail"/>
+  <owl:Class rdf:about="http://example.com/h#sender"/>
+  <owl:Class rdf:about="http://example.com/h#assets"/>
+  <owl:Class rdf:about="http://example.com/h#session"/>
+  <owl:Class rdf:about="http://example.com/h#Perform_Quantitative_risk_Analysis">
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#cost_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Schedule_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_register"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Enterprise_Environmental_Factors"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#organizational_Process_Assets"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#data_Gathering_and_representation_techniques"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Quantitative_risk_Analysis_and_Modeling_techniques"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Expert_Judgment"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Project_documents_updates"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#Perform_Qualitative_risk_Analysis">
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Scope_Baseline"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_register"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Enterprise_Environmental_Factors"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#organizational_Process_Assets"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_Probability_and_Impact_Assessment"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Probability_and_Impact_Matrix"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_data_Quality_Assessment"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_categorization"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_urgency_Assessment"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Expert_Judgment"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Project_documents_updates"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#Plan_risk_Management">
+    <pr:has_inputs rdf:resource="http://example.com/h#Project_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Project_charter"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Stakeholder_register"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Enterprise_Environmental_Factors"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#organizational_Process_Assets"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Analytical_techniques"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Expert_Judgment"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Meetings"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#risk_Management_Plan"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#information">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdf:type rdf:resource="http://example.com/h#register"/>
+    <rdfs:subClassOf rdf:resource="http://example.com/h#need"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#Plan_risk_responses">
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_register"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Strategies_for_negative_risks_or_threats"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Strategies_for_Positive_risks_or_opportunities"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#contingent_response_Strategies"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Expert_Judgment"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Project_Management_Plan_updates"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Project_documents_updates"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#Identify_risks">
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_Management_Plan_11"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#cost_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Schedule_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Quality_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Human_resource_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Scope_Baseline"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Activity_cost_Estimates"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Activity_duration_Estimates"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Stakeholder_register"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#_Project_documents"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#_Procurement_documents"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#_Enterprise_Environmental_Factors"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#_organizational_Process_Assets"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#documentation_reviews"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Information_Gathering_techniques"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#checklist_Analysis"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Assumptions_Analysis"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#diagramming_techniques"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#SWot_Analysis"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Expert_Judgment"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#risk_register"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#control_risks">
+    <pr:has_inputs rdf:resource="http://example.com/h#Project_Management_Plan"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#risk_register"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Work_Performance_data"/>
+    <pr:has_inputs rdf:resource="http://example.com/h#Work_Performance_reports"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_reassessment"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#risk_Audits"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Variance_and_trend_Analysis"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#technical_Performance_Measurement"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#reserve_Analysis"/>
+    <pr:has_tools_and_techniques rdf:resource="http://example.com/h#Meetings"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Work_Performance_Information"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#change_requests"/>
+    <pr:has_outputs rdf:resource="http://example.com/h#Project_Management_Plan_updates"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#analysis">
+    <rdf:type rdf:resource="http://example.com/h#information"/>
+    <rdfs:subClassOf rdf:resource="http://example.com/h#speci˜c"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#matrix">
+    <rdfs:subClassOf rdf:resource="http://example.com/h#grid"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#register">
+    <rdf:type rdf:resource="http://example.com/h#plan"/>
+    <rdfs:subClassOf rdf:resource="http://example.com/h#document"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#context">
+    <rdfs:subClassOf rdf:resource="http://example.com/h#combination"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#plan">
+    <rdfs:subClassOf rdf:resource="http://example.com/h#component"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://example.com/h#technology">
+    <rdfs:subClassOf rdf:resource="http://example.com/h#need"/>
+  </owl:Class>
+</rdf:RDF>
